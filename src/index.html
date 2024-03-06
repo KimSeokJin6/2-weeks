@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/layout/_head.html', { "title": "Statut" })
+
+  <body>
+    @@include('./html/layout/_header.html')
+
+    <maun>
+      <section class="about">
+        <div class="container">
+          <div class="about__inner">
+            <div class="about__inner-item">
+              <div class="slider">
+                <div class="slider-wrapper">
+                  <div class="slider-slide">
+                    <div class="slider-slide__img">
+                      <img src="@img/2=3.png" alt="" />
+                      <img src="@img/books.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-btn">
+                  <div class="slider-btn__inner">
+                    <div
+                      class="slider-btn__inner-item slider-btn__inner-item-left"
+                    >
+                      <img src="@svgSprite#arrow_left" alt="" />
+                    </div>
+                    <div
+                      class="slider-btn__inner-item slider-btn__inner-item-right"
+                    >
+                      <img src="@svgSprite#arrow_right " alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blocks">
+                <div class="blocks-left">
+                  <p class="blocks-left-text">
+                    Бесплатно доставим ваш заказ при покупке от 2000 ₽
+                  </p>
+                  <img
+                    src="@img/dilivery_img.png"
+                    alt=""
+                    class="blocks-left-img"
+                  />
+                  <img
+                    src="@svgSprite#wave-line"
+                    alt=""
+                    class="blocks-left-wave"
+                  />
+                </div>
+                <div class="blocks-right">
+                  <p class="blocks-right-text">
+                    Скидка <br />при регистрации <br />до 15%
+                  </p>
+                  <img
+                    src="@img/discount_img.png"
+                    alt=""
+                    class="blocks-right-img"
+                  />
+                  <img
+                    src="@svgSprite#wave-green"
+                    alt=""
+                    class="blocks-right-wave"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="about__inner-item">
+              <div class="card">
+                <div class="card-top">
+                  <p class="card-top__book">Книга дня</p>
+                  <span class="card-top__timer">08:56:31</span>
+                </div>
+                <div class="card-img">
+                  <img src="@img/img1.png" alt="" />
+                </div>
+                <div class="card-desc">
+                  <span class="card-desc__text">Корпоративное право</span>
+                  <h5 class="card-desc__title">
+                    Инвестирование: способы, риски, субъекты : монография
+                  </h5>
+                  <span class="card-desc__text">Майфат А.В.</span>
+                  <div class="card-desc__price">4 450 ₽</div>
+                  <div class="card-save">
+                    <button class="card-save__basket">
+                      <img
+                        src="@img/colored-basket.png"
+                        alt="colored basket icon"
+                      />
+                      <span class="button_text">В корзину</span>
+                    </button>
+                    <button class="card-save__saved">
+                      <img src="@svgSprite#save " alt="" />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news-products">
+        <div class="container">
+          <div class="products">
+            <h2 class="title">Новые поступления</h2>
+            <div class="products-btn">
+              <button class="products-btn-prev">
+                <img
+                  src="@svgSprite#arrow_left"
+                  alt=" "
+                  class="products-btns"
+                />
+              </button>
+              <button class="products-btn-next">
+                <img
+                  src="@svgSprite#arrow_right"
+                  class="products-btns"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="products-cards">
+            <div class="cards cards-border">
+              <div class="sticker">
+                <span class="sticker-text sticker-purple">Бестселлер</span>
+                <span class="sticker-text sticker-red">1+1=3</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/img2.png" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Корпоративное право</span>
+                <h5 class="card-desc__title">
+                  Инвестирование: способы, риски, субъекты : монография
+                </h5>
+                <span class="card-desc__text">Майфат А.В.</span>
+                <div class="card-desc__price">4 450 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@svgSprite#like" alt="like icon" class="like" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <div class="sticker">
+                <span class="sticker-text sticker-green">Новинки</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/second_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Багдасарян А.Ф.</span>
+                <div class="card-desc__price">372 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@svgSprite#like" alt="like icon" class="like" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <a href="#" class="cards-img">
+                <img src="@img/third_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Башлаков-Николаев И.В.</span>
+                <div class="card-desc__discount">
+                  <span class="card-desc__price red">984 ₽</span>
+                  <span class="cards-cross">1 284 ₽</span>
+                  <span class="cards-green-text">Выгода 300 ₽</span>
+                  <div class="cards-red"></div>
+                </div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@img/like.svg" alt="like icon" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                  />
+                  <span class="button_text">В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="sticker">
+                <span class="sticker-text sticker-purple">Бестселлер</span>
+                <span class="sticker-text sticker-red">1+1=3</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/img2.png" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Корпоративное право</span>
+                <h5 class="card-desc__title">
+                  Инвестирование: способы, риски, субъекты : монография
+                </h5>
+                <span class="card-desc__text">Майфат А.В.</span>
+                <div class="card-desc__price">450 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@img/like.svg" alt="like icon" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                  />
+                  <span class="button_text">В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cards-more">
+            <span>Показать все книги раздела</span>
+          </div>
+        </div>
+      </section>
+      <section class="discount">
+        <div class="container">
+          <div class="discount-inner">
+            <div class="discount-text">
+              <p>Скидка 200 ₽ при подписке на рассылку Издательства</p>
+              <img
+                src="@svgSprite#search-orange"
+                alt=""
+                class="discount-search-wave"
+              />
+            </div>
+            <form action="#" method="get" class="discount-search search">
+              <input
+                name="search-disc"
+                placeholder="Введите ваш Email"
+                type="search"
+                class="search-text"
+              />
+            </form>
+            <div class="discount-btn">
+              <a href="#" class="discount-btn-link">Подписаться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="preparing-products">
+        <div class="container">
+          <div class="products">
+            <h2 class="title">Готовятся к выходу</h2>
+            <div class="products-btn">
+              <button class="products-btn-prev">
+                <img
+                  src="@svgSprite#arrow_left"
+                  alt=" "
+                  class="products-btns"
+                />
+              </button>
+              <button class="products-btn-next">
+                <img
+                  src="@svgSprite#arrow_right"
+                  class="products-btns"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="products-cards">
+            <div class="cards cards-border">
+              <div class="sticker">
+                <span class="sticker-text sticker-purple">Бестселлер</span>
+                <span class="sticker-text sticker-red">1+1=3</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/img2.png" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Корпоративное право</span>
+                <h5 class="card-desc__title">
+                  Инвестирование: способы, риски, субъекты : монография
+                </h5>
+                <span class="card-desc__text">Майфат А.В.</span>
+                <div class="card-desc__price">4 450 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@svgSprite#like" alt="like icon" class="like" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <div class="sticker">
+                <span class="sticker-text sticker-green">Новинки</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/second_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Багдасарян А.Ф.</span>
+                <div class="card-desc__price">372 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@svgSprite#like" alt="like icon" class="like" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <a href="#" class="cards-img">
+                <img src="@img/third_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Башлаков-Николаев И.В.</span>
+                <div class="card-desc__discount">
+                  <span class="card-desc__price red">984 ₽</span>
+                  <span class="cards-cross">1 284 ₽</span>
+                  <span class="cards-green-text">Выгода 300 ₽</span>
+                  <div class="cards-red"></div>
+                </div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@img/like.svg" alt="like icon" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                  />
+                  <span class="button_text">В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards">
+              <div class="sticker">
+                <span class="sticker-text sticker-purple">Бестселлер</span>
+                <span class="sticker-text sticker-red">1+1=3</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/img2.png" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Корпоративное право</span>
+                <h5 class="card-desc__title">
+                  Инвестирование: способы, риски, субъекты : монография
+                </h5>
+                <span class="card-desc__text">Майфат А.В.</span>
+                <div class="card-desc__price">450 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@img/like.svg" alt="like icon" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                  />
+                  <span class="button_text">В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cards-more">
+            <span>Показать все книги раздела</span>
+          </div>
+        </div>
+      </section>
+      <section class="feature">
+        <div class="container">
+          <div class="feature-inner">
+            <div class="feature-inner__item">
+              <div class="feature-inner__item-inner">
+                <div class="feature-inner__item-img">
+                  <img
+                    src="@img/clock-feat.png"
+                    alt=""
+                    class="feature-inner__item-inner-img"
+                  />
+                </div>
+              </div>
+              <div class="feature-inner__item-in">
+                <p class="feature-inner__item-title">Быстрая доставка</p>
+                <p class="feature-inner__item-text">
+                  Доставим бесплатно от 2000 ₽ по всей России
+                </p>
+              </div>
+            </div>
+            <div class="feature-inner__item">
+              <div class="feature-inner__item-inner">
+                <div class="feature-inner__item-img">
+                  <img
+                    src="@img/el-card.png"
+                    alt=""
+                    class="feature-inner__item-inner-img"
+                  />
+                </div>
+              </div>
+              <div class="feature-inner__item-in">
+                <p class="feature-inner__item-title">Безопасная оплата</p>
+                <p class="feature-inner__item-text">
+                  Плати безопасно и легко онлайн на нашем сайте.
+                </p>
+              </div>
+            </div>
+            <div class="feature-inner__item">
+              <div class="feature-inner__item-inner">
+                <div class="feature-inner__item-img">
+                  <img
+                    src="@img/startts.png"
+                    alt=""
+                    class="feature-inner__item-inner-img"
+                  />
+                </div>
+              </div>
+              <div class="feature-inner__item-in">
+                <p class="feature-inner__item-title">Бонусная программа</p>
+                <p class="feature-inner__item-text">
+                  Дополнительная скидка 15% при регистрации
+                </p>
+              </div>
+            </div>
+            <div class="feature-inner__item">
+              <div class="feature-inner__item-inner">
+                <div class="feature-inner__item-img">
+                  <img
+                    src="@img/paket.png"
+                    alt=""
+                    class="feature-inner__item-inner-img"
+                  />
+                </div>
+              </div>
+              <div class="feature-inner__item-in">
+                <p class="feature-inner__item-title">Большой выбор</p>
+                <p class="feature-inner__item-text">
+                  Ежегодно выходит в свет более 100 книг
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="news">
+        <div class="container">
+          <div class="products">
+            <h2 class="title">Новости</h2>
+            <div class="products-btn">
+              <button class="products-btn-prev">
+                <img
+                  src="@svgSprite#arrow_left"
+                  alt=" "
+                  class="products-btns"
+                />
+              </button>
+              <button class="products-btn-next">
+                <img
+                  src="@svgSprite#arrow_right"
+                  class="products-btns"
+                  alt=""
+                />
+              </button>
+            </div>
+          </div>
+          <div class="products-cards">
+            <div class="cards cards-border">
+              <a href="#" class="cards-img">
+                <img src="@img/img2.png" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">16 июня 2020</span>
+                <h5 class="card-desc__title">
+                  Бесплатный онлайн-семинар. Доктрина stare decisis: борьба за прецедент в рос...
+                </h5>
+                <p class="card-desc__text">18 июня в «Клубе цивилистов» пройдет бесплатный онлайн-семинар по проблематике судебного прецедента. Мероприятие приуроч...</з>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <div class="sticker">
+                <span class="sticker-text sticker-green">Новинки</span>
+              </div>
+              <a href="#" class="cards-img">
+                <img src="@img/second_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Багдасарян А.Ф.</span>
+                <div class="card-desc__price">372 ₽</div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@svgSprite#like" alt="like icon" class="like" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                    class="icon"
+                  />
+                  <span>В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+            <div class="cards cards-border">
+              <a href="#" class="cards-img">
+                <img src="@img/third_card.svg" />
+              </a>
+              <div class="card-desc cards-h">
+                <span class="card-desc__text">Договорное право</span>
+                <h5 class="card-desc__title">
+                  Договор коммерческой концессии (франчайзинг). Граж...
+                </h5>
+                <span class="card-desc__text">Башлаков-Николаев И.В.</span>
+                <div class="card-desc__discount">
+                  <span class="card-desc__price red">984 ₽</span>
+                  <span class="cards-cross">1 284 ₽</span>
+                  <span class="cards-green-text">Выгода 300 ₽</span>
+                  <div class="cards-red"></div>
+                </div>
+              </div>
+              <div class="cards-raiting">
+                <div class="cards-raiting__star">
+                  <img src="@svgSprite#star" alt="star icon" class="star" />
+                  <span>4.9</span>
+                </div>
+                <div class="cards-raiting__like">
+                  <img src="@img/like.svg" alt="like icon" />
+                  <span>89% рекомендуют</span>
+                </div>
+              </div>
+              <div class="card-save">
+                <button class="card-save__basket">
+                  <img
+                    src="@img/colored-basket.png"
+                    alt="colored basket icon"
+                  />
+                  <span class="button_text">В корзину</span>
+                </button>
+                <button class="card-save__saved">
+                  <img src="@svgSprite#save" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    @@include('./html/layout/_footer.html')
+    @@include('./html/layout/_scripts.html')
+  </body>
+</html>

@@ -1,0 +1,411 @@
+body {
+  padding: 0;
+  margin: 0;
+  min-width: 320px;
+  background-color: #f9f9fa;
+}
+
+.about {
+  margin-top: 30px;
+  &__inner {
+    @extend %display;
+    width: 100%;
+    flex-wrap: wrap;
+    &-item {
+      @extend %display;
+      flex-direction: column;
+      height: 520px;
+    }
+    &-right {
+      width: 320px;
+      height: 520px;
+      background: white;
+      border-radius: 5px;
+      padding: 20px 20px 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      &-time {
+        width: 100%;
+        @extend %display;
+      }
+      &-img {
+        margin-top: 21px;
+        align-self: center;
+        width: 90%;
+        @extend %display-center;
+      }
+    }
+  }
+}
+.icon {
+  height: 20px;
+}
+.card {
+  width: 360px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: $statutWhite;
+  padding: 22px 20px 26px 20px;
+  &-img {
+    @extend %display-center;
+    margin: 23px 0 15px 0;
+  }
+  &-top {
+    @extend %display;
+    &__book {
+      @extend %font-500;
+      font-size: 16px;
+    }
+    &__timer {
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 500;
+      color: $statutOrange;
+      background: #ff7a0026;
+      border-radius: 5px;
+    }
+  }
+  &-desc {
+    @extend %display;
+    flex-direction: column;
+    height: 160px;
+    align-items: flex-start;
+    &__text {
+      font-size: 12px;
+      font-weight: 500;
+      font-family: Roboto;
+      color: #1c294d80;
+      line-height: 15px;
+    }
+    &__title {
+      @extend %font-500;
+    }
+    &__price {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+  }
+  &-save {
+    width: 196px;
+    height: 40px;
+    @extend %display;
+    &__saved {
+      width: 40px;
+      height: 40px;
+      background: white;
+      border: 1px solid #eeeeee;
+    }
+    &__basket {
+      width: 146px;
+      height: 40px;
+      @extend %display;
+      @extend %font-500;
+      padding: 5px 25px;
+      border: 1px solid #eeeeee;
+      background: white;
+    }
+  }
+}
+.star {
+  height: 15px;
+}
+.like {
+  height: 15px;
+}
+.blocks {
+  border-radius: 5px;
+  @extend %display;
+  gap: 30px;
+  &-left {
+    background-color: $statutViolet;
+    position: relative;
+    border-radius: 5px;
+    @extend %display;
+    padding: 20px 25px;
+    gap: 10px;
+    height: 160px;
+    width: 360px;
+    &-text {
+      color: $statutWhite;
+      @extend %Gosha-sans;
+      z-index: 1;
+    }
+    &-img {
+      height: 100px;
+      width: 97px;
+    }
+    &-wave {
+      position: absolute;
+      width: 112px;
+      left: 17px;
+      top: 23px;
+    }
+  }
+  &-right {
+    @extend %display;
+    background-color: $statutLightPink;
+    border-radius: 5px;
+    padding: 20px 25px;
+    gap: 10px;
+    height: 160px;
+    position: relative;
+    width: 360px;
+    &-img {
+      width: 40%;
+      height: 103px;
+    }
+    &-text {
+      @extend %Gosha-sans;
+      z-index: 2;
+      color: rgba(28, 41, 77, 0.8);
+    }
+    &-wave {
+      position: absolute;
+      width: 112px;
+      z-index: 1;
+      height: 40px;
+      bottom: 35px;
+      left: 22px;
+    }
+  }
+}
+
+.title {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+
+  margin-left: 25px;
+  color: #1c294d;
+}
+.products {
+  margin-top: 30px;
+  padding: 18px 25px;
+  @extend %display;
+  border-radius: 5px;
+  background-color: $statutWhite;
+  border-bottom: 1px solid $statutLightGreyLine;
+  &-btns {
+    width: 20px;
+    height: 20px;
+  }
+  &-btn {
+    @extend %display;
+    &-prev {
+      border-radius: 10px 0px 0px 10px;
+      width: 40px;
+      height: 40px;
+      @extend %display-center;
+      line-height: 38px;
+      border: 1px solid $statutLightGreyLine;
+    }
+
+    &-next {
+      border: 1px solid $statutLightGreyLine;
+      border-radius: 0px 10px 10px 0px;
+      width: 40px;
+      height: 40px;
+      @extend %display-center;
+      line-height: 38px;
+    }
+  }
+  &-cards {
+    @extend %display;
+  }
+}
+.cards {
+  position: relative;
+  width: 287px;
+  height: 460px;
+  flex-direction: column;
+  background-color: $statutWhite;
+  @extend %display;
+  align-items: start;
+  padding: 25px 20px 20px 20px;
+  &-red {
+    position: absolute;
+    width: 41px;
+    height: 1px;
+    border-radius: 2px;
+    transform: rotate(-10deg);
+    background: #fd3a3a;
+    bottom: 123px;
+    left: 70px;
+  }
+  &-cross {
+    color: $statutDarkBlueLine;
+    padding-top: 3px;
+    position: relative;
+  }
+  &-h {
+    height: 111px;
+  }
+  &-img {
+    margin: 0 auto;
+  }
+  &-border {
+    border-right: 1px solid $statutLightGreyLine;
+  }
+  &-more {
+    height: 40px;
+    @extend %display-center;
+    border-top: 1px solid #1c294d26;
+    @extend %font-500;
+    background-color: $statutWhite;
+    color: #1c294d;
+  }
+  &-green {
+    background: #e2f6ec;
+    color: $statutGreen;
+    &-text {
+      color: #0db98c;
+      padding-top: 1px;
+    }
+  }
+  &-raiting {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 10px;
+    &__star {
+      @extend %display-center;
+      gap: 4px;
+      background: #fef6e0;
+      color: $statutYellow;
+      padding: 5px 8px;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+    &__like {
+      @extend %display-center;
+      gap: 5px;
+      background: #ebedf7;
+      color: #7986cb;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  }
+}
+.sticker {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  &-green {
+    background: #e2f6ec;
+    color: $statutGreen;
+  }
+  &-text {
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto;
+    border-radius: 5px;
+  }
+  &-purple {
+    background: #eee9f7;
+    color: $statutLightViolet;
+  }
+  &-red {
+    background: #ffeeee;
+    color: $statutTomato;
+  }
+}
+.red {
+  color: $statutRedLink;
+}
+.discount {
+  &-inner {
+    @extend %display-center;
+    height: 105px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background: $statutBlue;
+    gap: 14px;
+  }
+  &-text {
+    max-width: 471px;
+    height: 20px;
+    position: relative;
+    color: $statutWhite;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+    line-height: 20px;
+  }
+  &-search {
+    max-width: 418px;
+    height: 40px;
+    border-radius: 5px;
+    background: $statutWhite;
+    &-wave {
+      position: absolute;
+      width: 61.5px;
+      left: 60px;
+      z-index: -1;
+      bottom: -9.5px;
+    }
+  }
+  &-btn-link {
+    padding: 10px 25px;
+    border: 1px solid $statutWhite;
+    border-radius: 5px;
+    color: $statutWhite;
+    @extend %font-500;
+  }
+}
+.feature {
+  &-inner {
+    @extend %display;
+    margin-top: 30px;
+    &__item {
+      width: 263px;
+      height: 150px;
+      border-radius: 5px;
+      background: $statutWhite;
+      @extend %display-around;
+      &-in{
+        margin-right: 16px;
+      }
+      &-img {
+        width: 99px;
+        height: 64px;
+        margin-left: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &-inner-img {
+        margin-left: -5px;
+      }
+      &-title {
+        width: 155px;
+        height: 25px;
+        color: rgb(28, 41, 77);
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.3px;
+      }
+      &-text {
+        color: rgb(114, 114, 114);
+        font-size: 12px;
+        font-weight: 400;
+        max-width: 153px;
+        font-family: Roboto;
+        line-height: 19px;
+      }
+    }
+  } }
+
+

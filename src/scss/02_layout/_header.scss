@@ -1,0 +1,129 @@
+.header {
+  position: sticky;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $statutWhite;
+  &-top {
+    border-bottom: 1px solid #dfe0e1;
+    padding: 15px 0;
+    @extend %display;
+    &__connection {
+      @extend %display;
+      width: 339px;
+      font-weight: 500;
+    }
+    &__link {
+      width: 452px;
+      @extend %display;
+      &-img {
+        @extend %display;
+        gap: 5px;
+        &-inner {
+          height: 20px;
+        }
+      }
+    }
+  }
+  &-main {
+    padding: 20px 0;
+    @extend %display;
+    &__link {
+      width: 297px;
+      @extend %display;
+      &-img {
+        gap: 5px;
+        &-main {
+          @extend %font-400;
+          line-height: 20px;
+        }
+      }
+    }
+    &__inner {
+      @extend %display;
+      &-logo {
+        height: 40px;
+      }
+      &-item {
+        @extend %display;
+        gap: 30px;
+      }
+    }
+  }
+  &-bottom {
+    padding: 0 0 20px 0;
+    &__inner {
+      width: 484px;
+      @extend %display;
+    }
+  }
+}
+.img-link {
+  @extend %font-400;
+  cursor: pointer;
+  color: #1c294dcc;
+  &-main {
+    @extend %font-400;
+    line-height: 20px;
+    color: #1c294dcc;
+  }
+}
+.search {
+  width: 573px;
+  border: 1px solid #dfe0e1;
+  padding: 10px 15px;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 0 5px 5px 0;
+  position: relative;
+  &-text {
+    @extend %font-400;
+    line-height: 20px;
+  }
+  &-btn {
+    width: 123px;
+    height: 100%;
+    @extend %display-center;
+    gap: 3px;
+    position: absolute;
+    background: $statutOrange;
+    color: $statutWhite;
+    right: 0;
+    top: 0;
+    border-radius: 0 5px 5px 0;
+    &__text {
+      @extend %font-400;
+      color: $statutWhite;
+    }
+  }
+}
+.blue-link {
+  @extend %font-500;
+  color: #1c294dcc;
+}
+.red-link {
+  @extend %font-500;
+  color: $statutRedLink;
+}
+.degree {
+  position: relative;
+  &_back {
+    position: absolute;
+    top: 0;
+    transform: translate(50%, -50%);
+    font-family: Roboto;
+    font-size: 9px;
+    width: 15px;
+    height: 15px;
+    font-weight: 500;
+    line-height: 11px;
+    text-align: center;
+    display: flex;
+    color: $statutWhite;
+    align-items: center;
+    justify-content: center;
+    background: $statutOrange;
+    border-radius: 10px;
+  }
+}

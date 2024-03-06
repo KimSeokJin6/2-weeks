@@ -1,0 +1,41 @@
+.slider {
+  width: 750px;
+  height: 350px;
+  border-radius: 5px;
+  position: relative;
+  background-color: $statutLightGreen;
+
+  &-slide {
+    @extend %display-center;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+  &__img{
+    @extend %display-center;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    }
+  }
+  &-btn{
+    @extend %display;
+    position: absolute;
+    top:0;width: 100%;
+    bottom: 0;
+    z-index: 8;
+  &__inner{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  &-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    @extend %display-center;
+    background: #FFFFFFD9;
+  &-left{
+    margin-left: 20px
+  }
+  &-right{
+    margin-right: 20px
+  }}}}}
