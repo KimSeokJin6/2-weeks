@@ -1,52 +1,14 @@
 // Colors
-$statutWhite: #fff;
-$statutBlack: #000000;
-$statutOrange: #ff7a00;
-$statutRedLink: #ff283d;
-$statutLightGreen: #ccff90;
-$statutViolet: #6d378f;
-$statutLightPink: #ffd8ef;
-$statutLightViolet: #ac8ee3;
-$statutBlue: #0288d1;
-$statutDarkBlueLine: #1c294d26;
-$statutLightGreyLine: #e1e1e1;
-$statutYellow: #fbc02d;
-$statutTomato: #ff4f52;
-$statutGreen: #3dc47e;
+$White: #fff;
+$Black: #000000;
+$darkViolet: #3f2e5c;
+$blackViolet: #1d0f30;
+$LightViolet: #aea1be;
+$Violet: #4a306e;
+$Background: #fbfbfb;
 
-// Bootstrap utilities
-// $grid-breakpoints: (
-//   xs: 0,
-//   sm: 576px,
-//   md: 768px,
-//   lg: 992px,
-//   xl: 1200px,
-//   wxp: 1440px,
-//   wxpp: 1600px,
-//   fhd: 1920px,
-//   qhd: 2560px,
-// );
-// @import "node_modules/bootstrap/scss/mixins/_breakpoints.scss";
-// @import "node_modules/bootstrap/scss/bootstrap-reboot.scss";
-// @import "node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
-// // Swiper
-// @import "node_modules/swiper/swiper.scss";
-
-// // Swiper Modules
-// @import "node_modules/swiper/modules/free-mode/free-mode.scss";
-// @import "node_modules/swiper/modules/pagination/pagination.scss";
-
-// FONTS LOAD SECTION
-// 100: Thin;
-// 200: Extra Light (Ultra Light);
-// 300: Light;
-// 400: Normal;
-// 500: Medium;
-// 600: Semi Bold (Demi Bold);
-// 700: Bold;
-// 800: Extra Bold (Ultra Bold);
-// 900: Black (Heavy).
 @mixin font($fname, $fstyle, $fweight, $furl) {
   @font-face {
     font-family: $fname;
@@ -84,3 +46,171 @@ $iconFontFamily: "Icons";
 
 // Custom Icons
 @include font("Icons", normal, 400, "@fonts/Icons/icomoon");
+
+.container {
+  max-width: 1640px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+body{
+  background-color:$Background;
+}
+%display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%display-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+%display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%font-400 {
+  font-family: Urbanist;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+%font-500-Urbanist{
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+  box-sizing: border-box;
+
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+
+  &:link,
+  &:visited,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    list-style: none;
+  }
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  &[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+  }
+
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+button {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}

@@ -4,756 +4,108 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Week-2</title>
+  <title>Flower</title>
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  
 
   <!-- Swiper -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
     integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
-  <body>
-    <header class="header">
-  <div class="header-top">
-    <div class="container">
-      <div class="wrapper">
-        <div class="header-top__link">
-          <div class="header-top__link-img">
-            <img
-              src="assets/svgicons/icons/icons.svg#places"
-              alt=""
-              class="header-top__link-img-inner"
-            />
-            <a href="#" class="img-link">Москва</a>
-          </div>
-          <div class="header-top__link-img">
-            <img
-              src="assets/svgicons/icons/icons.svg#box"
-              alt=""
-              class="header-top__link-img-inner"
-            />
-            <a href="#" class="img-link">Доставка и оплата</a>
-          </div>
-          <div class="header-top__link-img">
-            <img
-              src="assets/svgicons/icons/icons.svg#clock"
-              alt=""
-              class="header-top__link-img-inner"
-            />
-            <a href="#" class="img-link">Адрес и часы работы</a>
-          </div>
-        </div>
-        <div class="header-top__connection">
-          <div class="header-top__link-img">
-            <img
-              src="assets/svgicons/icons/icons.svg#email"
-              alt=""
-              class="header-top__link-img-inner"
-            />
-            <a href="mailto:+7(967)321-22-33" class="img-link"
-              >market@estatut.ru</a
-            >
-          </div>
-          <div class="header-top__link-img">
-            <img
-              src="assets/svgicons/icons/icons.svg#tel"
-              alt=""
-              class="header-top__link-img-inner"
-            />
-            <a href="tel:+8 (968) 660-65-50" class="img-link"
-              >8 (968) 660-65-50</a
-            >
-            <img src="assets/svgicons/icons/icons.svg#i" alt="" class="header-top__link-img-inner" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="header-main">
-    <div class="container">
-      <div class="header-main__inner">
-        <div class="header-main__inner-item">
-          <img src="assets/svgicons/icons/icons.svg#logo" alt="" class="header-main__inner-logo" />
-          <form action="" method="get" class="search">
-            <input
-              name="search"
-              placeholder="Автор, название, ISBN"
-              type="search"
-              class="search-text"
-            />
-            <button type="submit" class="search-btn">
-              <img
-                src="assets/svgicons/icons/icons.svg#lupa"
-                alt="loupe"
-                class="header-top__link-img-inner"
-              />
-              <p class="search-btn__text">Искать</p>
-            </button>
-          </form>
-        </div>
-        <div class="header-main__inner-block">
-          <div class="header-main__link">
-            <div class="header-main__link-img">
-              <img
-                src="assets/svgicons/icons/icons.svg#save"
-                alt=""
-                class="header-top__link-img-inner"
-              />
-              <a href="#" class="img-link-main">Отложено</a>
-            </div>
-            <div class="header-main__link-img">
-              <img
-                src="assets/svgicons/icons/icons.svg#smail"
-                alt=""
-                class="header-top__link-img-inner"
-              />
-              <a href="#" class="img-link-main">Войти</a>
-            </div>
-            <div class="header-main__link-img degree">
-              <img
-                src="assets/svgicons/icons/icons.svg#basket"
-                class="header-top__link-img-inner"
-                alt=""
-              />
-              <a href="#" class="img-link-main" style="position: relative"
-                >Корзина</a
-              >
-              <div class="degree_back">
-                <span>10</span>
-              </div>
-            </div>
-          </div>
+  <body>
+    <header>
+  <div class="container">
+    <div class="header">
+      <div class="header-logo">
+        <img src="assets/svgicons/icons/icons.svg#logo" alt="logo" class="logo" />
+      </div>
+      <nav class="menu">
+        <ul class="menu-liks">
+          <li class="menu-liks__item"><a href="index.html">Главная</a></li>
+          <li class="menu-liks__item"><a href="catalog.html">Каталог</a></li>
+          <li class="menu-liks__item"><a href="about.html">О нас</a></li>
+          <li class="menu-liks__item"><a href="reviews.html">Отзывы</a></li>
+          <li class="menu-liks__item"><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="header-tel">
+        <a href="tel:+79894267893" class>+79894267893</a>
+      </div>
+      <div class="header-btn">
+        <a href="" class="header-btn__link"
+          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#heart" alt="heart"
+        /></a>
+        <a href="" class="header-btn__link"
+          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#shop" alt="heart"
+        /></a>
+        <a href="" class="header-btn__link"
+          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#door" alt="heart"
+        /></a>
+      </div>
+      <div class="header-burger">
+        <button class="header__burger-btn left-column" id="burger">
+          <span class="left-column__line"></span>
+          <span class="left-column__line"></span>
+          <span class="left-column__line"></span>
+        </button>
+        <div class="header-burger__inner">
+          <nav class="header-burger__menu">
+            <ul class="menu-liks burger-menu">
+              <li class="menu-liks__item burger-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="about.html" style="font-family: Urbanist;">О нас</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="reviews.html">Отзывы</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="contact.html">Контакты</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="contact.html">Избранное</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="contact.html">Корзина</a>
+              </li>
+              <li class="menu-liks__item burger-item">
+                <a href="contact.html">Авторизоваться</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
   </div>
-  <div class="header-bottom">
-    <div class="container">
-      <div class="header-bottom__inner">
-        <div class="header-bottom__link-img">
-          <img
-            src="assets/svgicons/icons/icons.svg#line-blue"
-            alt=""
-            class="header-top__link-img-inner"
-          />
-          <a href="#" class="blue-link">Каталог</a>
-        </div>
-        <div class="header-bottom__link-img">
-          <a href="#" class="blue-link">Авторы</a>
-        </div>
-        <div class="header-bottom__link-img">
-          <a href="#" class="blue-link">Новинки</a>
-        </div>
-        <div class="header-bottom__link-img">
-          <img
-            src="assets/svgicons/icons/icons.svg#skidka"
-            alt=""
-            class="header-top__link-img-inner"
-          />
-          <a href="#" class="red-link">Скидки</a>
-        </div>
-        <div class="header-bottom__link-img">
-          <a href="#" class="blue-link">Партнёрам</a>
-        </div>
-        <div class="header-bottom__link-img">
-          <a href="#" class="blue-link">Мы</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- <div class="header-burger">
-    <img src="assets/svgicons/icons/icons.svg#" alt="" />
-  </div> -->
 </header>
 
 
-    <maun>
-      <section class="about">
-        <div class="container">
-          <div class="about__inner">
-            <div class="about__inner-item">
-              <div class="slider">
-                <div class="slider-wrapper">
-                  <div class="slider-slide">
-                    <div class="slider-slide__img">
-                      <img src="assets/images/2=3.png" alt="" />
-                      <img src="assets/images/books.png" alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="slider-btn">
-                  <div class="slider-btn__inner">
-                    <div
-                      class="slider-btn__inner-item slider-btn__inner-item-left"
-                    >
-                      <img src="assets/svgicons/icons/icons.svg#arrow_left" alt="" />
-                    </div>
-                    <div
-                      class="slider-btn__inner-item slider-btn__inner-item-right"
-                    >
-                      <img src="assets/svgicons/icons/icons.svg#arrow_right " alt="" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="blocks">
-                <div class="blocks-left">
-                  <p class="blocks-left-text">
-                    Бесплатно доставим ваш заказ при покупке от 2000 ₽
-                  </p>
-                  <img
-                    src="assets/images/dilivery_img.png"
-                    alt=""
-                    class="blocks-left-img"
-                  />
-                  <img
-                    src="assets/svgicons/icons/icons.svg#wave-line"
-                    alt=""
-                    class="blocks-left-wave"
-                  />
-                </div>
-                <div class="blocks-right">
-                  <p class="blocks-right-text">
-                    Скидка <br />при регистрации <br />до 15%
-                  </p>
-                  <img
-                    src="assets/images/discount_img.png"
-                    alt=""
-                    class="blocks-right-img"
-                  />
-                  <img
-                    src="assets/svgicons/icons/icons.svg#wave-green"
-                    alt=""
-                    class="blocks-right-wave"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="about__inner-item">
-              <div class="card">
-                <div class="card-top">
-                  <p class="card-top__book">Книга дня</p>
-                  <span class="card-top__timer">08:56:31</span>
-                </div>
-                <div class="card-img">
-                  <img src="assets/images/img1.png" alt="" />
-                </div>
-                <div class="card-desc">
-                  <span class="card-desc__text">Корпоративное право</span>
-                  <h5 class="card-desc__title">
-                    Инвестирование: способы, риски, субъекты : монография
-                  </h5>
-                  <span class="card-desc__text">Майфат А.В.</span>
-                  <div class="card-desc__price">4 450 ₽</div>
-                  <div class="card-save">
-                    <button class="card-save__basket">
-                      <img
-                        src="assets/images/colored-basket.png"
-                        alt="colored basket icon"
-                      />
-                      <span class="button_text">В корзину</span>
-                    </button>
-                    <button class="card-save__saved">
-                      <img src="assets/svgicons/icons/icons.svg#save " alt="" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="news-products">
-        <div class="container">
-          <div class="products">
-            <h2 class="title">Новые поступления</h2>
-            <div class="products-btn">
-              <button class="products-btn-prev">
-                <img
-                  src="assets/svgicons/icons/icons.svg#arrow_left"
-                  alt=" "
-                  class="products-btns"
-                />
-              </button>
-              <button class="products-btn-next">
-                <img
-                  src="assets/svgicons/icons/icons.svg#arrow_right"
-                  class="products-btns"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-          <div class="products-cards">
-            <div class="cards cards-border">
-              <div class="sticker">
-                <span class="sticker-text sticker-purple">Бестселлер</span>
-                <span class="sticker-text sticker-red">1+1=3</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/img2.png" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Корпоративное право</span>
-                <h5 class="card-desc__title">
-                  Инвестирование: способы, риски, субъекты : монография
-                </h5>
-                <span class="card-desc__text">Майфат А.В.</span>
-                <div class="card-desc__price">4 450 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/svgicons/icons/icons.svg#like" alt="like icon" class="like" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                    class="icon"
-                  />
-                  <span>В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards cards-border">
-              <div class="sticker">
-                <span class="sticker-text sticker-green">Новинки</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/second_card.svg" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Договорное право</span>
-                <h5 class="card-desc__title">
-                  Договор коммерческой концессии (франчайзинг). Граж...
-                </h5>
-                <span class="card-desc__text">Багдасарян А.Ф.</span>
-                <div class="card-desc__price">372 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/svgicons/icons/icons.svg#like" alt="like icon" class="like" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                    class="icon"
-                  />
-                  <span>В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards cards-border">
-              <a href="#" class="cards-img">
-                <img src="assets/images/third_card.svg" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Договорное право</span>
-                <h5 class="card-desc__title">
-                  Договор коммерческой концессии (франчайзинг). Граж...
-                </h5>
-                <span class="card-desc__text">Башлаков-Николаев И.В.</span>
-                <div class="card-desc__discount">
-                  <span class="card-desc__price red">984 ₽</span>
-                  <span class="cards-cross">1 284 ₽</span>
-                  <span class="cards-green-text">Выгода 300 ₽</span>
-                  <div class="cards-red"></div>
-                </div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/images/like.svg" alt="like icon" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                  />
-                  <span class="button_text">В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards">
-              <div class="sticker">
-                <span class="sticker-text sticker-purple">Бестселлер</span>
-                <span class="sticker-text sticker-red">1+1=3</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/img2.png" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Корпоративное право</span>
-                <h5 class="card-desc__title">
-                  Инвестирование: способы, риски, субъекты : монография
-                </h5>
-                <span class="card-desc__text">Майфат А.В.</span>
-                <div class="card-desc__price">450 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/images/like.svg" alt="like icon" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                  />
-                  <span class="button_text">В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cards-more">
-            <span>Показать все книги раздела</span>
-          </div>
-        </div>
-      </section>
-      <section class="discount">
-        <div class="container">
-          <div class="discount-inner">
-            <div class="discount-text">
-              <p>Скидка 200 ₽ при подписке на рассылку Издательства</p>
-              <img
-                src="assets/svgicons/icons/icons.svg#search-orange"
-                alt=""
-                class="discount-search-wave"
-              />
-            </div>
-            <form action="#" method="get" class="discount-search search">
-              <input
-                name="search-disc"
-                placeholder="Введите ваш Email"
-                type="search"
-                class="search-text"
-              />
-            </form>
-            <div class="discount-btn">
-              <a href="#" class="discount-btn-link">Подписаться</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="preparing-products">
-        <div class="container">
-          <div class="products">
-            <h2 class="title">Готовятся к выходу</h2>
-            <div class="products-btn">
-              <button class="products-btn-prev">
-                <img
-                  src="assets/svgicons/icons/icons.svg#arrow_left"
-                  alt=" "
-                  class="products-btns"
-                />
-              </button>
-              <button class="products-btn-next">
-                <img
-                  src="assets/svgicons/icons/icons.svg#arrow_right"
-                  class="products-btns"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-          <div class="products-cards">
-            <div class="cards cards-border">
-              <div class="sticker">
-                <span class="sticker-text sticker-purple">Бестселлер</span>
-                <span class="sticker-text sticker-red">1+1=3</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/img2.png" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Корпоративное право</span>
-                <h5 class="card-desc__title">
-                  Инвестирование: способы, риски, субъекты : монография
-                </h5>
-                <span class="card-desc__text">Майфат А.В.</span>
-                <div class="card-desc__price">4 450 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/svgicons/icons/icons.svg#like" alt="like icon" class="like" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                    class="icon"
-                  />
-                  <span>В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards cards-border">
-              <div class="sticker">
-                <span class="sticker-text sticker-green">Новинки</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/second_card.svg" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Договорное право</span>
-                <h5 class="card-desc__title">
-                  Договор коммерческой концессии (франчайзинг). Граж...
-                </h5>
-                <span class="card-desc__text">Багдасарян А.Ф.</span>
-                <div class="card-desc__price">372 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/svgicons/icons/icons.svg#like" alt="like icon" class="like" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                    class="icon"
-                  />
-                  <span>В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards cards-border">
-              <a href="#" class="cards-img">
-                <img src="assets/images/third_card.svg" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Договорное право</span>
-                <h5 class="card-desc__title">
-                  Договор коммерческой концессии (франчайзинг). Граж...
-                </h5>
-                <span class="card-desc__text">Башлаков-Николаев И.В.</span>
-                <div class="card-desc__discount">
-                  <span class="card-desc__price red">984 ₽</span>
-                  <span class="cards-cross">1 284 ₽</span>
-                  <span class="cards-green-text">Выгода 300 ₽</span>
-                  <div class="cards-red"></div>
-                </div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/images/like.svg" alt="like icon" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                  />
-                  <span class="button_text">В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-            <div class="cards">
-              <div class="sticker">
-                <span class="sticker-text sticker-purple">Бестселлер</span>
-                <span class="sticker-text sticker-red">1+1=3</span>
-              </div>
-              <a href="#" class="cards-img">
-                <img src="assets/images/img2.png" />
-              </a>
-              <div class="card-desc cards-h">
-                <span class="card-desc__text">Корпоративное право</span>
-                <h5 class="card-desc__title">
-                  Инвестирование: способы, риски, субъекты : монография
-                </h5>
-                <span class="card-desc__text">Майфат А.В.</span>
-                <div class="card-desc__price">450 ₽</div>
-              </div>
-              <div class="cards-raiting">
-                <div class="cards-raiting__star">
-                  <img src="assets/svgicons/icons/icons.svg#star" alt="star icon" class="star" />
-                  <span>4.9</span>
-                </div>
-                <div class="cards-raiting__like">
-                  <img src="assets/images/like.svg" alt="like icon" />
-                  <span>89% рекомендуют</span>
-                </div>
-              </div>
-              <div class="card-save">
-                <button class="card-save__basket">
-                  <img
-                    src="assets/images/colored-basket.png"
-                    alt="colored basket icon"
-                  />
-                  <span class="button_text">В корзину</span>
-                </button>
-                <button class="card-save__saved">
-                  <img src="assets/svgicons/icons/icons.svg#save" alt="" />
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="cards-more">
-            <span>Показать все книги раздела</span>
-          </div>
-        </div>
-      </section>
-      <section class="feature">
-        <div class="container">
-          <div class="feature-inner">
-            <div class="feature-inner__item">
-              <div class="feature-inner__item-inner">
-                <div class="feature-inner__item-img">
-                  <img
-                    src="assets/images/clock-feat.png"
-                    alt=""
-                    class="feature-inner__item-inner-img"
-                  />
-                </div>
-              </div>
-              <div class="feature-inner__item-in">
-                <p class="feature-inner__item-title">Быстрая доставка</p>
-                <p class="feature-inner__item-text">
-                  Доставим бесплатно от 2000 ₽ по всей России
-                </p>
-              </div>
-            </div>
-            <div class="feature-inner__item">
-              <div class="feature-inner__item-inner">
-                <div class="feature-inner__item-img">
-                  <img
-                    src="assets/images/el-card.png"
-                    alt=""
-                    class="feature-inner__item-inner-img"
-                  />
-                </div>
-              </div>
-              <div class="feature-inner__item-in">
-                <p class="feature-inner__item-title">Безопасная оплата</p>
-                <p class="feature-inner__item-text">
-                  Плати безопасно и легко онлайн на нашем сайте.
-                </p>
-              </div>
-            </div>
-            <div class="feature-inner__item">
-              <div class="feature-inner__item-inner">
-                <div class="feature-inner__item-img">
-                  <img
-                    src="assets/images/startts.png"
-                    alt=""
-                    class="feature-inner__item-inner-img"
-                  />
-                </div>
-              </div>
-              <div class="feature-inner__item-in">
-                <p class="feature-inner__item-title">Бонусная программа</p>
-                <p class="feature-inner__item-text">
-                  Дополнительная скидка 15% при регистрации
-                </p>
-              </div>
-            </div>
-            <div class="feature-inner__item">
-              <div class="feature-inner__item-inner">
-                <div class="feature-inner__item-img">
-                  <img
-                    src="assets/images/paket.png"
-                    alt=""
-                    class="feature-inner__item-inner-img"
-                  />
-                </div>
-              </div>
-              <div class="feature-inner__item-in">
-                <p class="feature-inner__item-title">Большой выбор</p>
-                <p class="feature-inner__item-text">
-                  Ежегодно выходит в свет более 100 книг
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <main>
 
     </main>
 
     <footer class="footer">
-  <div class="footer__top">
-    <div class="container">
-     
-    </div>
-  </div>
 </footer>
+
     
 
 <!-- Swiper -->
