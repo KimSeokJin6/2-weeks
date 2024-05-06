@@ -1,0 +1,63 @@
+.con-page {
+  margin-top: 60px;
+  &__desc {
+    width: 100%;
+    margin-top: 60px;
+    gap: 60px;
+    align-items: flex-start;
+    @extend %display;
+  }
+  &__text {
+    width: 100%;
+    margin-top: 40px;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    display: flex;
+    max-width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: $Black;
+    font-family: "Urbanist", sans-serif;
+    &-title {
+      display: block;
+      font-size: 18px;
+      color: $Black;
+      font-family: "Urbanist", sans-serif;
+      font-weight: 600;
+      line-height: 24px;
+    }
+    &-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19px;
+      color: $Black;
+      font-family: "Urbanist", sans-serif;
+    }
+  }
+  &__info {
+    font-family: Vetrino;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 39px;
+  }
+  &__map {
+    overflow: hidden;
+  }
+}
+@media (max-width: 1400px) {
+  .con-page {
+    &__item {
+      max-width: 500px;
+    }
+    &__desc {
+      flex-direction: column;
+    }
+    &__text {
+      margin-top: 20px;
+      gap: 40px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+.calog-page {
+  margin-top: 60px;
+  &__inner {
+    width: 100%;
+    margin-top: 60px;
+    gap: 60px;
+    align-items: flex-start;
+    @extend %display;
+  }
+  &-wrapper {
+    max-width: 1175px;
+    height: 1112px;
+    gap: 50px;
+    @extend %display;
+    flex-wrap: wrap;
+  }
+}
+.product {
+  &-catalog {
+    max-width: 1175px;
+    height: 1000px;
+    gap: 50px;
+    @extend %display;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+}
+// input[type="number"]::-webkit-outer-spin-button,
+// input[type="number"]::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+// }
+
+.filter {
+  border-radius: 20px 20px 0px 0px;
+  background: rgb(69, 56, 102);
+  width: 350px;
+  height: 100%;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 33px 60px 33px 60px;
+  &__inner {
+    @extend %display;
+    width: 100%;
+    gap: 40px;
+    align-items: flex-start;
+    flex-direction: column;
+    &-item {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-title {
+    color: $White;
+    font-family: Vetrino;
+    font-size: 24px;
+    line-height: 26px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid $White;
+  }
+}
+.circle {
+  border-radius: 100px;
+  background: $White;
+  width: 30px;
+  height: 30px;
+}
+.bloks {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.price-input {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-direction: column;
+}
+.fill-btn {
+  @extend %display;
+  flex-direction: column;
+  gap: 30px;
+  & a {
+    border-radius: 10px;
+    padding:15px 67px ;
+    display: block;
+    background: $Background;
+    font-family: "Urbanist", sans-serif;
+    color: $VioletMain;
+    font-weight: 600;
+  }
+}

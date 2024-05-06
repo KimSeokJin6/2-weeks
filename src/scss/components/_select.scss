@@ -1,0 +1,18 @@
+select {
+  border: 2px solid $Black;
+  border-radius: 4px;
+  width: 200px;
+  height: 38px;
+  padding: 6px 9px;
+  font-family: Urbanist, sans-serif;
+}
+// @media (max-width: 576px) {
+//   select {
+//     border: 2px solid $Black;
+//     border-radius: 4px;
+//     width: 175px;
+//     height: 45px;
+//     padding: 8px 9px;
+//     font-family: Urbanist, sans-serif;
+//   }
+// }

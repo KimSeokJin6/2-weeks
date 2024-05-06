@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/layout/_head.html', { "title": "Statut" })
+
+  <body>
+    @@include('./html/layout/_header.html')
+
+    <main>
+      <section class="con-page">
+        <div class="container">
+          <h2>Контакты</h2>
+          <nav class="breadcrumb">
+            <ul class="breadcrumb">
+              Главная><b>Контакты</b>
+            </ul>
+          </nav>
+          <div class="con-page__desc">
+            <div>
+              <h3 class="con-page__info">Контактная информация</h3>
+              <div class="con-page__text">
+                <div>
+                  <p>
+                    Цветочный магазин предлагает широкий ассортимент различных
+                    цветов и растений для праздников, подарков или просто для
+                    украшения своего дома. Сборка цветов в букеты - это процесс,
+                    во время которого флорист создает композицию из различных
+                    цветов, учитывая их форму, текстуру, цвет и размер. Флористы
+                    используют специальные приемы и техники, чтобы создать
+                    красивые и уникальные букеты, которые будут радовать своих
+                    получателей.
+                  </p>
+                </div>
+                <div class="con-page__item">
+                  <span class="con-page__item-title">Адрес</span>
+                  <div>
+                    <p class="con-page__item-text">ул. Астана Кесаева, 2А</p>
+                  </div>
+                </div>
+                <div class="con-page__item">
+                  <span class="con-page__item-title">Почта</span>
+                  <div>
+                    <a href="mailto:info@flower.com" class="con-page__item-text"
+                      >info@flower.com</a
+                    >
+                  </div>
+                </div>
+                <div class="con-page__item">
+                  <span class="con-page__item-title">Телефон</span>
+                  <div>
+                    <a class="con-page__item-text" href="tel:+79894267893"
+                      >+79894267893</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="con-page__map"
+              style="max-width: 1200px; min-width: 960px"
+            >
+              <script
+                style="width: 100%"
+                type="text/javascript"
+                charset="utf-8"
+                async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad824a19d749d104a25885335e0309c6bb53ce72d4b5670df43cdac5d0d5b0f71&amp;width=1200&amp;height=500&amp;lang=ru_RU&amp;scroll=true"
+              ></script>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="order"
+        style="background-image: url('@img/purple-line.png')"
+      >
+        <div class="container-margin">
+          <div class="order-inner">
+            <div class="order-side-left">
+              <img
+                src="@img/flo-1.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+            <form class="order-inner__block">
+              <h2 class="order-inner-title">Оставить заявку на наши услуги</h2>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="ФИО"
+                  id="modal-text"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#user"></use>
+                </svg>
+              </div>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Номер телефона"
+                  name="tel"
+                  id="modal-password"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#input-tel"></use>
+                </svg>
+              </div>
+              <div class="textarea">
+                <textarea name="text" id="" placeholder="Текст..."></textarea>
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#email"></use>
+                </svg>
+              </div>
+              <a href="" class="order-btn">Отправить</a>
+            </form>
+            <div class="order-side-right">
+              <img
+                src="@img/flo-3.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./html/layout/_footer.html')
+    @@include('./html/layout/_scripts.html')
+  </body>
+</html>

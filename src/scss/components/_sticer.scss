@@ -1,0 +1,36 @@
+.sticer {
+  position: absolute;
+  width: 100%;
+  padding: 18px 20px 0px 20px;
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-new {
+      font-family: "Urbanist", sans-serif;
+      border-radius: 4px;
+      background-color: $White;
+      font-weight: 500;
+      padding: 7px 10px;
+      line-height: 15px;
+    }
+    &-heart {
+      background-color: $White;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      &-link {
+        width: 18px;
+        height: 18px;
+        display: block;
+      }
+      &:hover {
+        fill: white;
+        background-color: $darkViolet;
+      }
+    }
+  }
+}

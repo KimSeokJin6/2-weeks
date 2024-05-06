@@ -1,0 +1,18 @@
+.swiper {
+  &-buttons {
+    @extend %display;
+    gap: 20px;
+  }
+  &-pagination {
+    margin-top: 50px;
+    position: relative;
+    &-bullet {
+      width: 12px;
+      margin-top: 30px;
+      height: 12px;
+      &-active {
+        background: rgb(96, 49, 143);
+      }
+    }
+  }
+}

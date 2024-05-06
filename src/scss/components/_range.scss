@@ -1,0 +1,75 @@
+.field {
+  display: flex;
+  align-items: center;
+  & input {
+    width: 60px;
+    border: 1px solid #999;
+    outline: none;
+    background-color: $White;
+    font-size: 14px;
+    font-family: Urbanist, sans-serif;
+    margin-left: 10px;
+    border-radius: 100px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 5px;
+    -moz-appearance: textfield;
+  }
+  & span {
+    color: #fafafa;
+    font-family: Urbanist, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &-bloks {
+    @extend %display;
+    width: 100%;
+
+    & .separator {
+      color: $White;
+    }
+  }
+}
+.slider {
+  height: 5px;
+  border-radius: 5px;
+  position: relative;
+  background: #919191;
+  & .progress {
+    border-radius: 5px;
+    background-color: #fafafa;
+    height: 5px;
+    left: 25%;
+    right: 25%;
+    position: absolute;
+  }
+}
+.range-input {
+  position: relative;
+  & input {
+    position: absolute;
+    pointer-events: none;
+    top: 0px;
+    height: 5px;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+  }
+}
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  pointer-events: auto;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  background: $Background;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: none;
+  pointer-events: auto;
+  border-radius: 50%;
+  -moz-appearance: none;
+  background: $Background;
+}

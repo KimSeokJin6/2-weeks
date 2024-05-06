@@ -1,0 +1,42 @@
+.ab-page {
+  margin-top: 60px;
+  &__desc {
+    width: 100%;
+    margin-top: 60px;
+    gap: 60px;
+    align-items: flex-start;
+    @extend %display;
+    &-img {
+      width: 472px;
+      height: 705px;
+    }
+    &-text {
+      width: 1126px;
+      height: 100%;
+      &-inner {
+        margin-top: 20px;
+        color: $Black;
+        font-family: "Urbanist", sans-serif;
+        font-size: 16px;
+        width: 100%;
+        font-weight: 500;
+        line-height: 17px;
+        letter-spacing: 7%;
+      }
+    }
+  }
+}
+.breadcrumb {
+  margin-top: 20px;
+}
+@media (max-width: 992px) {
+  .ab-page__desc-img {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .ab-page__desc {
+    margin-top: 30px;
+  }
+}
+

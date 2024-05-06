@@ -1,0 +1,84 @@
+.product {
+  overflow: hidden;
+  padding: 10px 0;
+  &__img {
+    border-radius: 8px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 280px;
+  }
+  &__title {
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &__price {
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  &__btn {
+    @extend %display;
+    height: 38px;
+    width: 100%;
+    font-family: "Urbanist", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  &__item {
+    @extend %display;
+    position: relative;
+    gap: 20px;
+    width: auto;
+    height: auto;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 300px;
+  }
+  & .swiper-wrapper {
+    box-sizing: content-box;
+  }
+}
+
+.link {
+  &-violet {
+    color: white;
+    padding: 10px 26px;
+    background: $darkViolet;
+    border-radius: 50px;
+    border: 1px solid $darkViolet;
+    &:hover {
+      color: rgb(18, 18, 18);
+      background-color: $White;
+    }
+  }
+  &-white {
+    color: $Black;
+    padding: 10px 26px;
+    border-radius: 50px;
+    border: 1px solid rgb(18, 18, 18);
+    &:hover {
+      color: $White;
+      background-color: $darkViolet;
+    }
+  }
+}
+@media (max-width: 1640px) {
+  .container-margin {
+    max-width: 1390px;
+  }
+}
+@media (max-width: 497px) {
+  .product {
+    &__item {
+      align-items: center;
+      justify-content: center;
+    }
+    // &__btn {
+    //   width: 70%;
+    // }
+  }
+}

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/layout/_head.html', { "title": "Flower" })
+
+  <body>
+    @@include('./html/layout/_header.html')
+
+    <main>
+      <section class="ab-page mar-top">
+        <div class="container">
+          <nav class="breadcrumb">
+            <ul class="breadcrumb">
+              Главная > Каталог > Авторский букет > Лавандовый рассвет
+            </ul>
+          </nav>
+          <div class="card mar-top">
+            <div class="card-slider">
+              <div class="slider-nav">
+                <div class="slider-nav__item">
+                  <img src="@img/new.png" alt="" />
+                </div>
+                <div class="slider-nav__item">
+                  <img src="@img/new.png" alt="" />
+                </div>
+                <div class="slider-nav__item">
+                  <img src="@img/new.png" alt="" />
+                </div>
+                <div class="slider-nav__item">
+                  <img src="@img/new.png" alt="" />
+                </div>
+              </div>
+              <div class="card-slider__block slider-block">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide slider-block__inner">
+                    <img src="@img/new.png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider-block__inner">
+                    <img src="@img/new.png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider-block__inner">
+                    <img src="@img/new.png" alt="" />
+                  </div>
+                  <div class="swiper-slide slider-block__inner">
+                    <img src="@img/new.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-info">
+              <span class="vendor">Арктикул: 294568</span>
+              <div class="title-block card-title">
+                <h2>Лавандрвый рассвет</h2>
+                <a href="" class="header__btn-link">
+                  <svg>
+                    <use xlink:href="@svgSprite#heart"></use>
+                  </svg>
+                </a>
+              </div>
+              <p class="desc">
+                Сборный букет круглой формы в нежной лавандово-розовой гамме.
+                Букет упакован в дизайнерскую пленку и декорирован атласными
+                лентами. Отправляем фото букета перед доставкой.
+              </p>
+              <div class="testimonials">
+                <div class="price">
+                  <span class="price__current">8000 ₽</span>
+                  <span class="price__old">8000 ₽</span>
+                </div>
+                <div class="price__inner">
+                  <div class="basket__order">
+                    <input
+                      type="number"
+                      name="count"
+                      id="count"
+                      class="count"
+                      min="1"
+                      max="12"
+                      step="1"
+                      value="1"
+                    />
+                    <button type="submit" class="btn-order">Купить</button>
+                  </div>
+                  <select name="select" id="#">
+                    <option value="" selected>Выберите Размер, см</option>
+                    <option value="1">M (до 35 см)</option>
+                    <option value="2">L (до 40 см)</option>
+                    <option value="3">XL (до 45 см)</option>
+                    <option value="4">WOW! (до 50 см)</option>
+                    <option value="5">REAL WOW! (от 55 см)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mar-top">
+        <div class="container">
+          <div class="sin-desc">
+            <div class="desc-text">
+              <h2>Описание товара</h2>
+              <p class="desc-text__inner">
+                Размер на фото: XL.Состав: нежные ранункулюсы, пионовидная роза,
+                антуриум, лавандовый дельфиниум, хризантема "момоко", кружевной
+                диантус, веточки рускуса, изящный клематис. Доставка: через 2-3
+                часа после оформления заказа. Если вам нужен букет "прямо
+                сейчас", свяжитесь с нами и мы предложим вам варианты букетов,
+                которые сможем доставить быстрее всего. Бесплатно к букету
+                прилагается транспортировочная коробка, крафтовая ваза,
+                подкормка, инструкция по уходу за букетом.Дополнительно: по
+                вашей просьбе мы можем подписать карточку от вашего имени,
+                просто укажите текст записки в комментарии при оформлении
+                заказа. Вы также можете приобрести авторскую открытку по
+                ссылке.Обратная связь: цветы - живой и очень хрупкий материал.
+                Если ваш букет пришел в ненадлежащем виде, пожалуйста, свяжитесь
+                с нами для решения проблемы.
+              </p>
+            </div>
+            <div class="single">
+              <h2>Также вам может понравиться</h2>
+              <div class="also">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide product__item">
+                    <div class="sticer">
+                      <div class="sticer__card">
+                        <span class="sticer__card-new">Новинки</span>
+                        <span class="sticer__card-heart">
+                          <svg class="sticer__card-heart-link">
+                            <use xlink:href="@svgSprite#heart-sticer"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+                    <a class="product__img">
+                      <img src="@img/new.png" alt="" />
+                    </a>
+                    <div>
+                      <h3 class="product__title">
+                        Авторский букет "Лавандовый рассвет
+                      </h3>
+                      <p class="product__price">от 8000р</p>
+                    </div>
+
+                    <div class="product__btn">
+                      <a href="single-product.html" class="link-violet"
+                        >Подробнее</a
+                      >
+                      <a href="" class="link-white">В 1 клик</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination also-pag"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./html/layout/_footer.html')
+    @@include('./html/layout/_scripts.html')
+  </body>
+</html>

@@ -1,0 +1,20 @@
+.fav-slide {
+  max-width: 100%;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (max-width: 1640px) {
+  .fav-slide {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  .sticer {
+    top: 0;
+  }
+  .product__btn {
+    width: 100%;
+  }
+}

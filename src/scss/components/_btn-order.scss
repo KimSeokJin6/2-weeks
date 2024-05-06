@@ -1,0 +1,17 @@
+.btn-order {
+  cursor: pointer;
+  width: 96px;
+  font-family: "Urbanist", sans-serif;
+  height: 40px;
+  color: $Black;
+  font-weight: 500;
+  border-radius: 0px 4px 4px 0;
+  border: 2px solid $VioletMain;
+  transition: all 0.5s ease-in;
+  background: $Background;
+  &:hover {
+    background-color: $VioletMain;
+    color: $Background;
+    border: 2px solid $VioletMain;
+  }
+}

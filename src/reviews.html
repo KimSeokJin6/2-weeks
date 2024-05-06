@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/layout/_head.html', { "title": "Statut" })
+
+  <body>
+    @@include('./html/layout/_header.html')
+
+    <main>
+      <section class="ab-page">
+        <div class="container">
+          <h2>Отзывы</h2>
+          <nav class="breadcrumb">
+            <ul class="breadcrumb">
+              Главная>Отзывы
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="reviews container">
+        <div class="reviews-block">
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="order"
+        style="background-image: url('@img/purple-line.png')"
+      >
+        <div class="container-margin">
+          <div class="order-inner">
+            <div class="order-side-left">
+              <img
+                src="@img/flo-1.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+            <form class="order-inner__block">
+              <h2 class="order-inner-title">Оставить заявку на наши услуги</h2>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="ФИО"
+                  id="modal-text"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#user"></use>
+                </svg>
+              </div>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Номер телефона"
+                  name="tel"
+                  id="modal-password"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#input-tel"></use>
+                </svg>
+              </div>
+              <div class="textarea">
+                <textarea name="text" id="" placeholder="Текст..."></textarea>
+                <svg class="form__input-svg">
+                  <use xlink:href="@svgSprite#email"></use>
+                </svg>
+              </div>
+
+              <a href="" class="order-btn">Отправить</a>
+            </form>
+            <div class="order-side-right">
+              <img
+                src="@img/flo-3.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./html/layout/_footer.html')
+    @@include('./html/layout/_scripts.html')
+  </body>
+</html>

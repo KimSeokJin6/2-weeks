@@ -1,5 +1,6 @@
 import dartSass from "sass";
 import gulpSass from "gulp-sass";
+//
 import autoPrefixer from "gulp-autoprefixer";
 import gulpSourcemaps from "gulp-sourcemaps";
 
@@ -14,7 +15,7 @@ export const scss = () => {
     app.gulp
       .src(app.path.src.scss)
       // Comment/uncomment for production/development
-      // .pipe(init())
+      .pipe(init())
       .pipe(sass({ outputStyle: "expanded" }))
       .pipe(app.plugins.replace(/@img\//g, "../assets/images/"))
       .pipe(app.plugins.replace(/@fonts\//g, "../assets/fonts/"))
@@ -27,7 +28,7 @@ export const scss = () => {
       .pipe(GulpCleanCss())
       .pipe(app.plugins.rename({ extname: ".min.css" }))
       // Comment/uncomment for production/development
-      // .pipe(write("."))
+      .pipe(write("."))
       .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.browserSync.stream())
   );

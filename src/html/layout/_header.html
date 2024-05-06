@@ -1,63 +1,67 @@
 <header>
   <div class="container">
     <div class="header">
-      <div class="header-logo">
-        <img src="@svgSprite#logo" alt="logo" class="logo" />
-      </div>
+      <svg class="header__logo">
+        <use xlink:href="@svgSprite#logo"></use>
+      </svg>
       <nav class="menu">
-        <ul class="menu-liks">
-          <li class="menu-liks__item"><a href="index.html">Главная</a></li>
-          <li class="menu-liks__item"><a href="catalog.html">Каталог</a></li>
-          <li class="menu-liks__item"><a href="about.html">О нас</a></li>
-          <li class="menu-liks__item"><a href="reviews.html">Отзывы</a></li>
-          <li class="menu-liks__item"><a href="contact.html">Контакты</a></li>
+        <ul class="menu__liks">
+          <li class="menu__liks-item"><a href="index.html">Главная</a></li>
+          <li class="menu__liks-item"><a href="catalog.html">Каталог</a></li>
+          <li class="menu__liks-item"><a href="about.html">О нас</a></li>
+          <li class="menu__liks-item"><a href="reviews.html">Отзывы</a></li>
+          <li class="menu__liks-item"><a href="contact.html">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header-tel">
-        <a href="tel:+79894267893" class>+79894267893</a>
+      <a class="header__tel" href="tel:+79894267893">+79894267893</a>
+      <div class="header__btn">
+        <a href="favourites.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="@svgSprite#heart"></use>
+          </svg>
+        </a>
+        <a href="basket.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="@svgSprite#shop"></use>
+          </svg>
+        </a>
+        <a href="javascript:void(0);" class="header__btn-link afto">
+          <svg>
+            <use xlink:href="@svgSprite#door"></use>
+          </svg>
+        </a>
       </div>
-      <div class="header-btn">
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="@svgSprite#heart" alt="heart"
-        /></a>
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="@svgSprite#shop" alt="heart"
-        /></a>
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="@svgSprite#door" alt="heart"
-        /></a>
-      </div>
-      <div class="header-burger">
+      <div class="header__burger">
         <button class="header__burger-btn left-column" id="burger">
           <span class="left-column__line"></span>
           <span class="left-column__line"></span>
           <span class="left-column__line"></span>
         </button>
-        <div class="header-burger__inner">
-          <nav class="header-burger__menu">
+        <div class="header__burger-inner">
+          <nav class="header__burger-menu">
             <ul class="menu-liks burger-menu">
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="catalog.html">Каталог</a>
               </li>
-              <li class="menu-liks__item burger-item">
-                <a href="about.html" style="font-family: Urbanist;">О нас</a>
+              <li class="menu__liks-item burger-item">
+                <a href="about.html">О нас</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="reviews.html">Отзывы</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Контакты</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Избранное</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Корзина</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Авторизоваться</a>
               </li>
             </ul>

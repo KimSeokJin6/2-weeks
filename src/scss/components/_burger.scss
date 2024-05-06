@@ -1,0 +1,114 @@
+.header__burger {
+  &-inner {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    right: -397px;
+    width: 300px;
+    height: 300px;
+    top: 0;
+    z-index: 2;
+    background-color: #fbfbfb;
+    transition: transform 0.5s;
+    align-items: center;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  }
+  &-menu {
+    margin-top: 100px;
+  }
+  &-btn {
+    display: none;
+    width: 45px;
+    height: 50px;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+    border: none;
+  }
+  & .header__burger-btn span {
+    position: absolute;
+    left: 5px;
+    right: -367px;
+    width: 35px;
+    z-index: 5;
+    height: 2px;
+    border-radius: 50px;
+    background-color: #1c1c1c;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+}
+.burger {
+  display: flex;
+  gap: 9px;
+  flex-direction: column;
+  align-items: center;
+  &-menu {
+    flex-direction: column;
+    height: 480px;
+  }
+  &-item {
+    padding: 20px;
+    border-top: 1px solid;
+    width: 100%;
+    &:nth-child(8) {
+      border-bottom: 1px solid;
+    }
+    &:hover {
+      transition: 0.4s;
+      background-color: #aea1be6b;
+    }
+  }
+}
+
+
+.header.open .header__burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  color: $blackViolet;
+}
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+}
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+.header.open .header__burger-inner {
+  transform: translateX(-502px);
+}
+
+
+@media (max-width: 768px) {
+  .header__burger {
+    &-inner {
+      display: block;
+      right: -501px;
+      width: 338px;
+      z-index: 3;
+      height: 100vh;
+    }
+    &-btn {
+      z-index: 7;
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .header__burger {
+    &-inner {
+      display: block;
+      right: -501px;
+      width: 338px;z-index: 3;
+      height: 100vh;
+    }
+    &-btn {
+      z-index: 7;
+      display: block;
+    }
+  }
+}

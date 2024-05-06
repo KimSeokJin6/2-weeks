@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./html/layout/_head.html', { "title": "Flower" })
+
+  <body>
+    @@include('./html/layout/_header.html')
+
+    <main>
+      <section class="page">
+        <div class="container">
+          <div class="title-block">
+            <div>
+              <h2>Корзина</h2>
+              <nav class="breadcrumb">
+                <ul class="breadcrumb">
+                  Главная > Корзина
+                </ul>
+              </nav>
+            </div>
+            <div>
+              <p>3 товара на сумму 3000рублей</p>
+            </div>
+          </div>
+          <div class="basket-wrapper mar-top">
+            <div class="basket__item">
+              <div class="basket__item-inner">
+                <div class="basket__img">
+                  <img src="@img/flo-2.png" alt="flo-2.png" />
+                </div>
+                <div class="basket__title">
+                  <h3>Лавандовый рассвет</h3>
+                  <p class="basket__price">8000₽</p>
+                  <select name="select" id="#">
+                    <option value="" selected>Выберите Размер, см</option>
+                    <option value="1">M (до 35 см)</option>
+                    <option value="2">L (до 40 см)</option>
+                    <option value="3">XL (до 45 см)</option>
+                    <option value="4">WOW! (до 50 см)</option>
+                    <option value="5">REAL WOW! (от 55 см)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__item-inner basket__item-widht">
+                <div class="basket__order">
+                  <input
+                    type="number"
+                    name="count"
+                    id="count"
+                    class="count"
+                    min="1"
+                    max="12"
+                    step="1"
+                    value="1"
+                  />
+                  <button type="submit" class="btn-order">Заказать</button>
+                </div>
+                <div class="basket__btn">
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#heart"></use>
+                    </svg>
+                    <span>В избранное</span>
+                  </a>
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#delete"></use>
+                    </svg>
+                    <span>Удалить</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__item-inner">
+                <div class="basket__img">
+                  <img src="@img/flo-2.png" alt="flo-2.png" />
+                </div>
+                <div class="basket__title">
+                  <h3>Лавандовый рассвет</h3>
+                  <p class="basket__price">8000₽</p>
+                  <select name="select" id="#">
+                    <option value="" selected>Выберите Размер, см</option>
+                    <option value="1">M (до 35 см)</option>
+                    <option value="2">L (до 40 см)</option>
+                    <option value="3">XL (до 45 см)</option>
+                    <option value="4">WOW! (до 50 см)</option>
+                    <option value="5">REAL WOW! (от 55 см)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__item-inner basket__item-widht">
+                <div class="basket__order">
+                  <input
+                    type="number"
+                    name="count"
+                    id="count"
+                    class="count"
+                    min="1"
+                    max="12"
+                    step="1"
+                    value="1"
+                  />
+                  <button type="submit" class="btn-order">Заказать</button>
+                </div>
+                <div class="basket__btn">
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#heart"></use>
+                    </svg>
+                    <span>В избранное</span>
+                  </a>
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#delete"></use>
+                    </svg>
+                    <span>Удалить</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="basket__item">
+              <div class="basket__item-inner">
+                <div class="basket__img">
+                  <img src="@img/flo-2.png" alt="flo-2.png" />
+                </div>
+                <div class="basket__title">
+                  <h3>Лавандовый рассвет</h3>
+                  <p class="basket__price">8000₽</p>
+                  <select name="select" id="#">
+                    <option value="" selected>Выберите Размер, см</option>
+                    <option value="1">M (до 35 см)</option>
+                    <option value="2">L (до 40 см)</option>
+                    <option value="3">XL (до 45 см)</option>
+                    <option value="4">WOW! (до 50 см)</option>
+                    <option value="5">REAL WOW! (от 55 см)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="basket__item-inner basket__item-widht">
+                <div class="basket__order">
+                  <input
+                    type="number"
+                    name="count"
+                    id="count"
+                    class="count"
+                    min="1"
+                    max="12"
+                    step="1"
+                    value="1"
+                  />
+                  <button type="submit" class="btn-order">Заказать</button>
+                </div>
+                <div class="basket__btn">
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#heart"></use>
+                    </svg>
+                    <span>В избранное</span>
+                  </a>
+                  <a href="" class="basket__btn-link">
+                    <svg class="btn-svg">
+                      <use xlink:href="@svgSprite#delete"></use>
+                    </svg>
+                    <span>Удалить</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./html/layout/_footer.html')
+    @@include('./html/layout/_scripts.html')
+  </body>
+</html>

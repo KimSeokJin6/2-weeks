@@ -1,0 +1,34 @@
+.header__btn {
+  width: 188px;
+  @extend %display;
+  &-link {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid $darkViolet;
+    @extend %display-center;
+    & svg {
+      display: block;
+      width: 20px;
+      height: 16px;
+    }
+    &:hover {
+      fill: $White;
+      background-color: $VioletMain;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    &__btn {
+      width: 140px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .header {
+    &__btn {
+      display: none;
+    }
+  }
+}

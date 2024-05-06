@@ -1,0 +1,190 @@
+.modal {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(19, 19, 19, 0.34);
+  top: 0;
+  left: 0;
+  z-index: 26;
+  -webkit-animation: fade 0.25s ease;
+  animation: fade 0.25s ease;
+  &-content {
+    align-items: center;
+    max-width: 500px;
+    z-index: 9;
+    position: relative;
+    background: $White;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    &__close {
+      position: absolute;
+      cursor: pointer;
+      top: 27px;
+      right: 14px;
+      padding: 15px 0;
+      z-index: 2;
+    }
+  }
+  &-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $Black;
+    font-family: "Urbanist", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &.opacity {
+    display: block;
+  }
+  &.open {
+    display: block;
+    overflow-y: auto;
+  }
+  &.close {
+    display: none;
+  }
+}
+
+.modal-content__close:after,
+.modal-content__close:before {
+  content: "";
+  width: 35px;
+  height: 1px;
+  display: block;
+  background-color: #414141;
+}
+.modal-content__close:after {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.modal-content__close:before {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+::placeholder {
+  color: $Grey;
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 310px;
+  align-items: center;
+  justify-content: center;
+  &__input {
+    background-color: $White;
+    position: relative;
+    padding: 10px 10px 8px 50px;
+    width: 308px;
+    height: 46px;
+    border: 1px solid $Grey;
+    border-radius: 10px;
+    font-family: "Urbanist", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    &:focus {
+      border: 1px solid $darkViolet;
+    }
+    &-svg {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      z-index: 2;
+      left: 15px;
+      top: 15px;
+    }
+  }
+  &__item {
+    position: relative;
+  }
+  &__text {
+    @extend %display;
+    font-family: "Urbanist", sans-serif;
+    width: 100%;
+    color: $darkViolet;
+  }
+  &__links {
+    display: flex;
+    align-items: center;
+    color: $darkViolet;
+    gap: 15px;
+    font-size: 14px;
+    font-family: "Urbanist", sans-serif;
+    & p {
+      display: block;
+    }
+    & > a {
+      display: inline-block;
+      color: $VioletMain;
+    }
+  }
+}
+.text {
+  color: $Black;
+  font-size: 14px;
+  &-link {
+    font-size: 14px;
+  }
+}
+.button {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  border-radius: 10px;
+  font-family: "Urbanist", sans-serif;
+  background: $darkViolet;
+  border: 1px solid $darkViolet;
+  padding: 12px 80px;
+  display: inline-block;
+  -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out;
+}
+.textarea {
+  position: relative;
+  & svg {
+    top: 11px;
+  }
+}
+textarea {
+  z-index: 2;
+  width: 305px;
+  font-family: "Urbanist", sans-serif;
+  height: 100px;
+  position: relative;
+  border: 1px solid $Grey;
+  border-radius: 8px;
+  background-color: $White;
+  padding: 10px 10px 8px 50px;
+  &:focus {
+    border: 1px solid $darkViolet;
+  }
+}
+::placeholder {
+  color: $Grey;
+}
+.success {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #3fb53f;
+  padding: 20px;
+  color: $White !important;
+  border-radius: 6px;
+}
+
+@media (min-width: 375px) {
+  .modal-content {
+    margin: 10% auto;
+    max-width: 470px;
+    height: auto;
+    padding: 40px 80px 25px 80px;
+  }
+}

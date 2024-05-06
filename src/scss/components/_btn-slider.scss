@@ -1,0 +1,21 @@
+.btn-slider {
+  width: 46px;
+  height: 46px;
+  background: $White;
+  color: $darkViolet;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid $Black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__arrow {
+    width: 24px;
+    display: block;
+    height: 24px;
+  }
+  &:hover {
+    fill: white;
+    background-color: $darkViolet;
+  }
+}

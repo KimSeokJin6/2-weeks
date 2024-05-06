@@ -6,9 +6,8 @@ $blackViolet: #1d0f30;
 $LightViolet: #aea1be;
 $Violet: #4a306e;
 $Background: #fbfbfb;
-
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
+$VioletMain:#453866;
+$Grey: rgb(158, 165, 173);
 @mixin font($fname, $fstyle, $fweight, $furl) {
   @font-face {
     font-family: $fname;
@@ -19,42 +18,42 @@ $Background: #fbfbfb;
   }
 }
 
-$primaryFontFamily: "Gosha Sans", sans-serif;
-$secondaryFontFamily: "Montserrat", sans-serif;
-$iconFontFamily: "Icons";
+// $primaryFontFamily: "Gosha Sans", sans-serif;
+// $secondaryFontFamily: "Montserrat", sans-serif;
+// $iconFontFamily: "Icons";
 
-@include font(
-  "GoshaSans",
-  normal,
-  100,
-  "@fonts/GoshaSans/GoshaSans-Ultralight"
-);
+@include font("Vetrino", normal, 300, "@fonts/Vetrino");
 
-@include font(
-  "GoshaSans",
-  normal,
-  200,
-  "@fonts/GoshaSans/GoshaSans-ExtraLight"
-);
-@include font("GoshaSans", normal, 300, "@fonts/GoshaSans/GoshaSans-Light");
-@include font("GoshaSans", normal, 400, "@fonts/GoshaSans/GoshaSans-Regular");
-@include font("GoshaSans", normal, 500, "@fonts/GoshaSans/GoshaSans-Medium");
-@include font("GoshaSans", normal, 600, "@fonts/GoshaSans/GoshaSans-SemiBold");
-@include font("GoshaSans", normal, 700, "@fonts/GoshaSans/GoshaSans-Bold");
-@include font("GoshaSans", normal, 800, "@fonts/GoshaSans/GoshaSans-ExtraBold");
-@include font("GoshaSans", normal, 900, "@fonts/GoshaSans/GoshaSans-Black");
-
-// Custom Icons
-@include font("Icons", normal, 400, "@fonts/Icons/icomoon");
+// // Custom Icons
+// @include font("Icons", normal, 400, "@fonts/Icons/icomoon");
 
 .container {
   max-width: 1640px;
   min-width: 375px;
   margin: 0 auto;
 }
-body{
-  background-color:$Background;
+.container-margin {
+  max-width: 1640px;
+  min-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 150px;
 }
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+  min-width: 320px;
+  background-color: $Background;
+}
+main {
+  position: relative;
+  overflow: hidden;
+}
+
 %display {
   display: flex;
   justify-content: space-between;
@@ -73,14 +72,14 @@ body{
   align-items: center;
 }
 
-%font-400 {
+%font-400-Urbanist {
   font-family: Urbanist;
   font-size: 14px;
-  line-height: 16px;
   font-weight: 400;
+  line-height: 19px;
 }
 
-%font-500-Urbanist{
+%font-500-Urbanist {
   font-family: Urbanist;
   font-size: 16px;
   font-weight: 500;

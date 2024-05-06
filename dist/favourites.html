@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower</title>
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.css"
+    integrity="sha512-pJrGHWDVOeiy4UkMtHu0fpD8oLLssFcaW0fsVXUkA1/jDLopa554Z1AZo5SKtekHnnmyat0ipiP0snKDrt0GNg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" /> -->
+
+  <link rel="stylesheet" href="css/style.min.css" />
+</head>
+
+
+  <body>
+    <header>
+  <div class="container">
+    <div class="header">
+      <svg class="header__logo">
+        <use xlink:href="assets/svgicons/icons/icons.svg#logo"></use>
+      </svg>
+      <nav class="menu">
+        <ul class="menu__liks">
+          <li class="menu__liks-item"><a href="index.html">Главная</a></li>
+          <li class="menu__liks-item"><a href="catalog.html">Каталог</a></li>
+          <li class="menu__liks-item"><a href="about.html">О нас</a></li>
+          <li class="menu__liks-item"><a href="reviews.html">Отзывы</a></li>
+          <li class="menu__liks-item"><a href="contact.html">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header__tel" href="tel:+79894267893">+79894267893</a>
+      <div class="header__btn">
+        <a href="favourites.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#heart"></use>
+          </svg>
+        </a>
+        <a href="basket.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#shop"></use>
+          </svg>
+        </a>
+        <a href="javascript:void(0);" class="header__btn-link afto">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#door"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="header__burger">
+        <button class="header__burger-btn left-column" id="burger">
+          <span class="left-column__line"></span>
+          <span class="left-column__line"></span>
+          <span class="left-column__line"></span>
+        </button>
+        <div class="header__burger-inner">
+          <nav class="header__burger-menu">
+            <ul class="menu-liks burger-menu">
+              <li class="menu__liks-item burger-item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="catalog.html">Каталог</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="about.html">О нас</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="reviews.html">Отзывы</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="contact.html">Контакты</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="contact.html">Избранное</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="contact.html">Корзина</a>
+              </li>
+              <li class="menu__liks-item burger-item">
+                <a href="contact.html">Авторизоваться</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main>
+      <section class="ab-page">
+        <div class="container">
+          <h2>Избранное</h2>
+          <nav class="breadcrumb">
+            <ul class="breadcrumb">
+              Главная>Избранное
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section class="fav-page">
+        <div class="container mar-top">
+          <div class="product-catalog fav-slide">
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+          </div>
+          <div class="pagination__option">
+            <ul class="pagination">
+              <li class="pagination__item pagination__item_active">
+                <span class="pagination__link">1</span>
+              </li>
+              <li class="pagination__item">
+                <a
+                  class="pagination__link"
+                  title="Страница 2"
+                  href="javascript:void(0);"
+                  >2</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a
+                  class="pagination__link"
+                  title="Страница 3"
+                  href="javascript:void(0);"
+                  >3</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a
+                  class="pagination__link"
+                  title="Страница 4"
+                  href="javascript:void(0);"
+                  >4</a
+                >
+              </li>
+              <li class="pagination__item">
+                <a
+                  class="pagination__link"
+                  rel="next"
+                  aria-label="Следующая страница"
+                  href="javascript:void(0);"
+                  >»</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+  <svg class="footer__bg">
+    <use xlink:href="assets/svgicons/icons/icons.svg#1"></use>
+  </svg>
+  <div class="footer-inner">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-wrapper__inner">
+          <svg class="footer-logo">
+            <use
+              xlink:href="assets/svgicons/icons/icons.svg#logo-footer"
+              class="footer-logo__link"
+            ></use>
+          </svg>
+          <nav class="footer-menu">
+            <h3 class="footer-menu__title">Меню</h3>
+            <ul class="footer-menu-liks">
+              <li>
+                <a class="footer-menu-liks__item" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="catalog.html"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="about.html">О нас</a>
+              </li>
+              <li>
+                <a href="reviews.html " class="footer-menu-liks__item"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Пользовательское согласие</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Правила оплаты и возврата</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Политика конфеданциональности</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-catalog">
+            <h3 class="footer-menu__title">Каталог</h3>
+            <ul class="footer-catalog-liks">
+              <li>
+                <a href="index.html" class="footer-catalog-liks__item"
+                  >Букеты</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer-catalog-liks__item"
+                  >Авторский букет</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="footer-catalog-liks__item"
+                  >Цветы в каробке</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html" class="footer-catalog-liks__item"
+                  >Корзина с цветами</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-catalog-liks__item"
+                  >Съедебные букеты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h3 class="footer-menu__title">Контакты</h3>
+            <div class="footer-contact-inner">
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">ул. Астана Кесаева, 2А</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">info@flower.com</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">+79894267893</p>
+              </div>
+              <div class="footer-social">
+                <a href="">
+                  <svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#telegramm-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#watsapp-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#vk-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <p>© 2024. Все права защищены.</p>
+          <p>Разработка сайта</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="login" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Авторизация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          name="tel"
+          class="form__input"
+          placeholder="Номер телефона"
+          id="modal-tel"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Запомнить меня</span></label
+        >
+        <a
+          href="javascript:void(0);"
+          class="form__links"
+          style="font-size: 16px"
+          >Забыли пароль?</a
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>Ещё нет аккаунта?</p>
+        <a href="#" class="register">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Register form -->
+<div id="register" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Регистрация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="ФИО"
+          id="modal-text"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#user"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Номер телефона"
+          name="tel"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="email"
+          class="form__input"
+          placeholder="Email"
+          name="password"
+          id="modal-email"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#email"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Повторить пароль"
+          name="modal-password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Я ознакомлен и принимаю условия</span>
+          <a href="" class="text-link"> Пользовательского соглашения</a></label
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>У вас есть аккунт?</p>
+        <a href="#" class="login">Авторизуйтесь</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  let login = document.getElementById("login");
+  let register = document.getElementById("register");
+  let loginCloseButton = login.querySelector(".modal-content__close");
+  let registerCloseButton = register.querySelector(".modal-content__close");
+
+  document.querySelector(".afto").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+  });
+
+  login
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      login.classList.add("close");
+      login.classList.remove("open");
+    });
+
+  document.querySelector(".register").addEventListener("click", function () {
+    event.preventDefault();
+    register.classList.add("open");
+    register.classList.remove("close");
+
+    login.classList.add("close");
+    login.classList.remove("open");
+  });
+
+  document.querySelector(".login").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+
+    register.classList.add("close");
+    register.classList.remove("open");
+  });
+
+  register
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      register.classList.add("close");
+      register.classList.remove("open");
+    });
+</script>
+
+    <!-- Swiper -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+  integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+<!-- mask -->
+<script src="https://unpkg.com/imask"></script>
+
+<!-- <script src="js/slider-single.js"></script> -->
+
+<script src="js/app.min.js"></script>
+
+  </body>
+</html>

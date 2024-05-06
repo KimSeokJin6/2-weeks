@@ -1,0 +1,163 @@
+.basket {
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    border-top: 2px solid rgb(224, 224, 224);
+    width: 100%;
+    padding: 50px 20px;
+    height: 265px;
+    @extend %display;
+    &-inner {
+      @extend %display;
+      gap: 50px;
+    }
+    &-widht {
+      width: 550px;
+    }
+  }
+  &__title {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+    & h3 {
+      color: $Black;
+      font-family: Vetrino;
+      font-size: 26px;
+    }
+  }
+  &__price {
+    color: $Black;
+    font-family: "Urbanist", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__img {
+    width: 200px;
+    height: 225px;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  &__btn {
+    @extend %display;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    &-link {
+      background-color: $VioletMain;
+      padding: 10px;
+      fill: $Background;
+      border: 2px solid $VioletMain;
+      border-radius: 4px;
+      gap: 15px;
+      color: $Background;
+      @extend %display;
+      align-items: center;
+      & span {
+        width: 100px;
+        display: block;
+        font-family: "Urbanist", sans-serif;
+        font-size: 16px;
+      }
+
+      &:hover {
+        border: 2px solid $VioletMain;
+        background-color: $Background;
+        color: $VioletMain;
+        fill: $VioletMain;
+      }
+    }
+  }
+}
+.btn-svg {
+  width: 22px;
+  height: 20px;
+}
+@media (max-width: 1200px) {
+  .basket {
+    &__item {
+      height: 100%;
+      padding: 30px 10px;
+      &-inner {
+        gap: 20px;
+      }
+      &-widht {
+        width: 390px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .basket {
+    &__item {
+      flex-direction: row;
+      height: 100%;
+      gap: 30px;
+      padding: 30px 10px;
+      &-widht {
+        flex-direction: column;
+      }
+    }
+    &__btn {
+      flex-direction: row;
+      &-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid #3f2e5c;
+        & span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .basket {
+    &__item {
+      flex-direction: column;
+      &-widht {
+        flex-direction: row;
+        width: 480px;
+      }
+    }
+  }
+
+  .btn-svg {
+    width: 22px;
+    height: 17px;
+    fill: $Background;
+  }
+}
+@media (max-width: 576px) {
+  .basket {
+    &__item {
+      flex-direction: column;
+      &-widht {
+        flex-direction: row;
+        max-width: 380px;
+      }
+      &-inner {
+        flex-direction: column;
+      }
+    }
+    &__title {
+      justify-content: center;
+      align-items: center;
+    }
+    &__btn {
+      flex-direction: row;
+      &-link {
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        border: 1px solid #3f2e5c;
+        & span {
+          display: none;
+        }
+      }
+    }
+  }
+}

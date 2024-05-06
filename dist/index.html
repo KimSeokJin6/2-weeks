@@ -6,14 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flower</title>
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet"
   />
-  
-
   <!-- Swiper -->
   <link
     rel="stylesheet"
@@ -22,6 +18,8 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" /> -->
 
   <link rel="stylesheet" href="css/style.min.css" />
 </head>
@@ -31,63 +29,67 @@
     <header>
   <div class="container">
     <div class="header">
-      <div class="header-logo">
-        <img src="assets/svgicons/icons/icons.svg#logo" alt="logo" class="logo" />
-      </div>
+      <svg class="header__logo">
+        <use xlink:href="assets/svgicons/icons/icons.svg#logo"></use>
+      </svg>
       <nav class="menu">
-        <ul class="menu-liks">
-          <li class="menu-liks__item"><a href="index.html">Главная</a></li>
-          <li class="menu-liks__item"><a href="catalog.html">Каталог</a></li>
-          <li class="menu-liks__item"><a href="about.html">О нас</a></li>
-          <li class="menu-liks__item"><a href="reviews.html">Отзывы</a></li>
-          <li class="menu-liks__item"><a href="contact.html">Контакты</a></li>
+        <ul class="menu__liks">
+          <li class="menu__liks-item"><a href="index.html">Главная</a></li>
+          <li class="menu__liks-item"><a href="catalog.html">Каталог</a></li>
+          <li class="menu__liks-item"><a href="about.html">О нас</a></li>
+          <li class="menu__liks-item"><a href="reviews.html">Отзывы</a></li>
+          <li class="menu__liks-item"><a href="contact.html">Контакты</a></li>
         </ul>
       </nav>
-      <div class="header-tel">
-        <a href="tel:+79894267893" class>+79894267893</a>
+      <a class="header__tel" href="tel:+79894267893">+79894267893</a>
+      <div class="header__btn">
+        <a href="favourites.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#heart"></use>
+          </svg>
+        </a>
+        <a href="basket.html" class="header__btn-link">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#shop"></use>
+          </svg>
+        </a>
+        <a href="javascript:void(0);" class="header__btn-link afto">
+          <svg>
+            <use xlink:href="assets/svgicons/icons/icons.svg#door"></use>
+          </svg>
+        </a>
       </div>
-      <div class="header-btn">
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#heart" alt="heart"
-        /></a>
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#shop" alt="heart"
-        /></a>
-        <a href="" class="header-btn__link"
-          ><img class="header-btn__link-img" src="assets/svgicons/icons/icons.svg#door" alt="heart"
-        /></a>
-      </div>
-      <div class="header-burger">
+      <div class="header__burger">
         <button class="header__burger-btn left-column" id="burger">
           <span class="left-column__line"></span>
           <span class="left-column__line"></span>
           <span class="left-column__line"></span>
         </button>
-        <div class="header-burger__inner">
-          <nav class="header-burger__menu">
+        <div class="header__burger-inner">
+          <nav class="header__burger-menu">
             <ul class="menu-liks burger-menu">
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="index.html">Главная</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="catalog.html">Каталог</a>
               </li>
-              <li class="menu-liks__item burger-item">
-                <a href="about.html" style="font-family: Urbanist;">О нас</a>
+              <li class="menu__liks-item burger-item">
+                <a href="about.html">О нас</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="reviews.html">Отзывы</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Контакты</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Избранное</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Корзина</a>
               </li>
-              <li class="menu-liks__item burger-item">
+              <li class="menu__liks-item burger-item">
                 <a href="contact.html">Авторизоваться</a>
               </li>
             </ul>
@@ -100,20 +102,915 @@
 
 
     <main>
+      <section class="main-block">
+        <div class="container">
+          <div class="main__wrapper">
+            <h1>СОЗДАЕМ <span>ЛЮБОВЬ</span> <br />ЧЕРЕЗ ЦВЕТЫ</h1>
+            <a href="" class="main-btn">Заказать букет</a>
+            <div class="main__text">
+              <div class="main__text-item">
+                <p><b>Букет за час</b></p>
+                <p>
+                  Cтанет настоящим спасением в случае внезапного или важного
+                  события. Быстро, красиво, надежно - идеальный выбор в условиях
+                  ограниченного времени!
+                </p>
+              </div>
+              <div class="main__text-item">
+                <p><b>Букет за час</b></p>
+                <p>
+                  Cтанет настоящим спасением в случае внезапного или важного
+                  события. Быстро, красиво, надежно - идеальный выбор в условиях
+                  ограниченного времени!
+                </p>
+              </div>
+              <div class="main__text-item">
+                <p><b>Букет за час</b></p>
+                <p>
+                  Cтанет настоящим спасением в случае внезапного или важного
+                  события. Быстро, красиво, надежно - идеальный выбор в условиях
+                  ограниченного времени!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="overflow: hidden">
+            <img src="assets/images/main-flower.png" alt="" class="main-flower" />
+          </div>
+        </div>
+      </section>
+      <section class="about" style="@img /bag-line-wh.png;" class="bag-line-wh">
+        <svg class="about__inner-item">
+          <use xlink:href="assets/svgicons/icons/icons.svg#1"></use>
+        </svg>
+        <div class="about__inner-title">
+          <h2 class="about__inner-title-sub">Мы создаем настроение</h2>
+          <div style="margin-top: 20px">
+            <p class="about-inner-title-text" style="width: 300px">
+              Мы любим цветы и стремимся передать их красоту и элегантность
+              <br /><b>в каждой нашей работу</b>
+            </p>
+          </div>
+        </div>
+        <div class="about__inner-gallary">
+          <div class="about__inner-gallary-inner">
+            <div class="gallary-side__left">
+              <img src="assets/images/flo-1.png" alt="flo" />
+            </div>
+            <div class="gallary-side__center">
+              <img src="assets/images/flo-2.png" alt="flo" />
+            </div>
+            <div class="gallary-side__right">
+              <img src="assets/images/flo-3.png" alt="flo" />
+            </div>
+          </div>
+          <div class="star">
+            <a href="#" class="star-text">
+              <svg class="logo-btn">
+                <use xlink:href="assets/svgicons/icons/icons.svg#logo-white"></use>
+              </svg>
+              <p>Выбрать <br />букет</p>
+              <svg class="stars__inner">
+                <use xlink:href="assets/svgicons/icons/icons.svg#Star"></use>
+              </svg>
+            </a>
+          </div>
+          <img src="assets/images/bag-line-wh.png" alt="" class="bag-line-wh" />
+        </div>
+      </section>
+      <section class="categories">
+        <div class="container">
+          <div class="categories__title">
+            <h2 style="color: white">Ассортимент</h2>
+            <div class="swiper-buttons">
+              <button class="btn-slider categories-prev">
+                <svg class="btn-slider__arrow">
+                  <use xlink:href="assets/svgicons/icons/icons.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="btn-slider categories-next">
+                <svg class="btn-slider__arrow">
+                  <use xlink:href="assets/svgicons/icons/icons.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="swiper services">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+              <div class="swiper-slide services__item">
+                <a
+                  href="#"
+                  class="services__item-img"
+                  style="background-image: url('assets/images/cater-1.png')"
+                >
+                  <div class="intro">
+                    <div class="intro__text">
+                      <p>
+                        Cтанет настоящим спасением в случае внезапного или
+                        важного события. Быстро, красиво, надежно - идеальный
+                        выбор в условиях ограниченного времени!
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <p class="services__item-title">Букеты</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="block-star">
+        <svg class="star__bg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#3"></use>
+        </svg>
+        <div class="star-center">
+          <a href="#" class="star-center__text">
+            <svg class="logo-center">
+              <use xlink:href="assets/svgicons/icons/icons.svg#logo-white"></use>
+            </svg>
+            <p>Выбрать <br />букет</p>
+            <svg class="stars__inner">
+              <use xlink:href="assets/svgicons/icons/icons.svg#Star"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+      <section class="new container-margin">
+        <div class="new__inner-title">
+          <h2>Новинки</h2>
+          <div class="swiper-buttons">
+            <button class="btn-slider new-prev">
+              <svg class="btn-slider__arrow">
+                <use xlink:href="assets/svgicons/icons/icons.svg#arrow-left"></use>
+              </svg>
+            </button>
+            <button class="btn-slider new-next">
+              <svg class="btn-slider__arrow">
+                <use xlink:href="assets/svgicons/icons/icons.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
 
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+            <div class="swiper-slide product__item">
+              <div class="sticer">
+                <div class="sticer__card">
+                  <span class="sticer__card-new">Новинки</span>
+                  <span class="sticer__card-heart">
+                    <svg class="sticer__card-heart-link">
+                      <use xlink:href="assets/svgicons/icons/icons.svg#heart-sticer"></use>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <a class="product__img">
+                <img src="assets/images/new.png" alt="" />
+              </a>
+              <div>
+                <h3 class="product__title">
+                  Авторский букет "Лавандовый рассвет
+                </h3>
+                <p class="product__price">от 8000р</p>
+              </div>
+
+              <div class="product__btn">
+                <a href="single-product.html" class="link-violet">Подробнее</a>
+                <a href="" class="link-white">В 1 клик</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+      <section class="reviews container-margin">
+        <div class="reviews__title">
+          <h2>Отзывы</h2>
+          <p class="reviews-link">Посмотреть все</p>
+        </div>
+        <div class="reviews-block">
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+          <div class="reviews-block__item">
+            <h3>Иван Голубьев</h3>
+            <p>
+              Хороший магазин. Ассортимент товара широкий есть что выбрать.
+              Доставка цветов быстрая. Доставили домой шикарный букет цветов.
+              Цены приемлемы. Спасибо за быструю доставку и качество товара.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="order"
+        style="background-image: url('assets/images/purple-line.png')"
+      >
+        <div class="container-margin">
+          <div class="order-inner">
+            <div class="order-side-left">
+              <img
+                src="assets/images/flo-1.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+            <form class="order-inner__block">
+              <h2 class="order-inner-title">Оставить заявку на наши услуги</h2>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="ФИО"
+                  id="modal-text"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="assets/svgicons/icons/icons.svg#user"></use>
+                </svg>
+              </div>
+              <div class="form__item">
+                <input
+                  type="text"
+                  class="form__input"
+                  placeholder="Номер телефона"
+                  name="tel"
+                  id="modal-password"
+                  required
+                />
+                <svg class="form__input-svg">
+                  <use xlink:href="assets/svgicons/icons/icons.svg#input-tel"></use>
+                </svg>
+              </div>
+              <div class="textarea">
+                <textarea name="text" id="" placeholder="Текст..."></textarea>
+                <svg class="form__input-svg">
+                  <use xlink:href="assets/svgicons/icons/icons.svg#email"></use>
+                </svg>
+              </div>
+
+              <a href="" class="order-btn">Отправить</a>
+            </form>
+            <div class="order-side-right">
+              <img
+                src="assets/images/flo-3.png"
+                alt="flo"
+                class="new-inner__gallary-side"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
+  <svg class="footer__bg">
+    <use xlink:href="assets/svgicons/icons/icons.svg#1"></use>
+  </svg>
+  <div class="footer-inner">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-wrapper__inner">
+          <svg class="footer-logo">
+            <use
+              xlink:href="assets/svgicons/icons/icons.svg#logo-footer"
+              class="footer-logo__link"
+            ></use>
+          </svg>
+          <nav class="footer-menu">
+            <h3 class="footer-menu__title">Меню</h3>
+            <ul class="footer-menu-liks">
+              <li>
+                <a class="footer-menu-liks__item" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="catalog.html"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="about.html">О нас</a>
+              </li>
+              <li>
+                <a href="reviews.html " class="footer-menu-liks__item"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Пользовательское согласие</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Правила оплаты и возврата</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Политика конфеданциональности</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-catalog">
+            <h3 class="footer-menu__title">Каталог</h3>
+            <ul class="footer-catalog-liks">
+              <li>
+                <a href="index.html" class="footer-catalog-liks__item"
+                  >Букеты</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer-catalog-liks__item"
+                  >Авторский букет</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="footer-catalog-liks__item"
+                  >Цветы в каробке</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html" class="footer-catalog-liks__item"
+                  >Корзина с цветами</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-catalog-liks__item"
+                  >Съедебные букеты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h3 class="footer-menu__title">Контакты</h3>
+            <div class="footer-contact-inner">
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">ул. Астана Кесаева, 2А</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">info@flower.com</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">+79894267893</p>
+              </div>
+              <div class="footer-social">
+                <a href="">
+                  <svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#telegramm-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#watsapp-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="assets/svgicons/icons/icons.svg#vk-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <p>© 2024. Все права защищены.</p>
+          <p>Разработка сайта</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
-    
+<div id="login" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Авторизация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          name="tel"
+          class="form__input"
+          placeholder="Номер телефона"
+          id="modal-tel"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Запомнить меня</span></label
+        >
+        <a
+          href="javascript:void(0);"
+          class="form__links"
+          style="font-size: 16px"
+          >Забыли пароль?</a
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>Ещё нет аккаунта?</p>
+        <a href="#" class="register">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Register form -->
+<div id="register" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Регистрация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="ФИО"
+          id="modal-text"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#user"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Номер телефона"
+          name="tel"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="email"
+          class="form__input"
+          placeholder="Email"
+          name="password"
+          id="modal-email"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#email"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Повторить пароль"
+          name="modal-password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="assets/svgicons/icons/icons.svg#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Я ознакомлен и принимаю условия</span>
+          <a href="" class="text-link"> Пользовательского соглашения</a></label
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>У вас есть аккунт?</p>
+        <a href="#" class="login">Авторизуйтесь</a>
+      </div>
+    </form>
+  </div>
+</div>
 
-<!-- Swiper -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
+<script>
+  let login = document.getElementById("login");
+  let register = document.getElementById("register");
+  let loginCloseButton = login.querySelector(".modal-content__close");
+  let registerCloseButton = register.querySelector(".modal-content__close");
+
+  document.querySelector(".afto").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+  });
+
+  login
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      login.classList.add("close");
+      login.classList.remove("open");
+    });
+
+  document.querySelector(".register").addEventListener("click", function () {
+    event.preventDefault();
+    register.classList.add("open");
+    register.classList.remove("close");
+
+    login.classList.add("close");
+    login.classList.remove("open");
+  });
+
+  document.querySelector(".login").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+
+    register.classList.add("close");
+    register.classList.remove("open");
+  });
+
+  register
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      register.classList.add("close");
+      register.classList.remove("open");
+    });
+</script>
+
+    <!-- Swiper -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.4/swiper-bundle.min.js"
   integrity="sha512-k2o1KZdvUi59PUXirfThShW9Gdwtk+jVYum6t7RmyCNAVyF9ozijFpvLEWmpgqkHuqSWpflsLf5+PEW6Lxy/wA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>
+<!-- <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+<!-- mask -->
+<script src="https://unpkg.com/imask"></script>
 
+<!-- <script src="js/slider-single.js"></script> -->
 
 <script src="js/app.min.js"></script>
+
   </body>
 </html>

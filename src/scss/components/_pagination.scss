@@ -1,0 +1,73 @@
+.pages {
+  margin-right: 20px;
+}
+.pagination__option {
+  margin:  50px 0px;
+}
+.pagination {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__item {
+  margin-right: 8px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 33px;
+  flex: 0 0 33px;
+  width: 33px;
+  height: 33px;
+}
+@media (min-width: 576px) {
+  .pagination__item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 40px;
+    flex: 0 0 40px;
+    width: 40px;
+    height: 40px;
+  }
+}
+.pagination__item_active .pagination__link {
+  border-color: $VioletMain;
+  background-color: $VioletMain;
+  color: #fff;
+}
+.pagination__link {
+  background-color: transparent;
+  font-size: 16px;
+  font-family: Vetrino;
+  line-height: 25px;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  -webkit-transition: border-color 0.25s ease, color 0.25s ease,
+    background-color 0.25s ease;
+  -o-transition: border-color 0.25s ease, color 0.25s ease,
+    background-color 0.25s ease;
+  transition: border-color 0.25s ease, color 0.25s ease,
+    background-color 0.25s ease;
+  border-color: #fff;
+  border: 1px solid $VioletMain;
+  color: #000;
+}
+.pagination__link:hover {
+  text-decoration: none;
+  border-color: $VioletMain;
+  color: #fff;
+  background-color: $VioletMain;
+}

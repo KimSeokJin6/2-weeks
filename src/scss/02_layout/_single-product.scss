@@ -1,0 +1,165 @@
+.vendor {
+  display: inline-block;
+  font-family: "Urbanist", sans-serif;
+  color: #808080;
+  margin-bottom: 25px;
+}
+.desc {
+  margin-top: 40px;
+  width: 70%;
+  &-text__inner {
+    margin-top: 30px;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  &__current {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: $Black;
+    margin-right: 30px;
+  }
+  &__old {
+    font-size: 18px;
+    line-height: 25px;
+    color: $Grey;
+    text-decoration: line-through;
+    transform: translateY(-5px);
+  }
+}
+.also {
+  max-width: 700px;
+  overflow: hidden;
+  margin-top: 30px;
+  padding: 10px 0px;
+  &-pag {
+    display: none;
+  }
+}
+.sin-desc {
+  @extend %display;
+  gap: 100px;
+  width: 100%;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+@media (max-width: 1200px) {
+  .sin-desc {
+    flex-direction: column;
+  }
+  .card {
+    flex-direction: column;
+    &-info {
+      width: calc(100% - 592px - 60px);
+    }
+  }
+}
+@media (max-width: 992px) {
+  .also {
+    max-width: 700px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .also {
+    max-width: 575px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 615px) {
+  .also {
+    max-width: 505px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px 0px;
+    &-pag {
+      display: block;
+    }
+  }
+  .card-title {
+    width: 100%;
+  }
+  .desc {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .also {
+    max-width: 370px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 10px 0px;
+    &-pag {
+      display: block;
+    }
+  }
+  .single {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    & h2 {
+      text-align: center;
+    }
+  }
+  .desc-text h2 {
+    text-align: center;
+  }
+  .slider-block__inner {
+    overflow: hidden;
+  }
+  .card {
+    &-slider {
+      width: 550px;
+      height: 430px;
+    }
+    &-title {
+      flex-direction: row;
+    }
+    .card-slider {
+      max-width: 510px;
+      height: 434px;
+      gap: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+    .price__inner {
+      flex-direction: column;
+    }
+    .card-title {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .slider-nav {
+      display: flex;
+      margin: 0;
+      width: 330px;
+      height: 100px;
+      gap: 20px;
+      margin-right: 20px;
+    }
+    .slider-nav__item:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+}

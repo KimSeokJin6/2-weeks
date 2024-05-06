@@ -1,2 +1,318 @@
 <footer class="footer">
+  <svg class="footer__bg">
+    <use xlink:href="@svgSprite#1"></use>
+  </svg>
+  <div class="footer-inner">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-wrapper__inner">
+          <svg class="footer-logo">
+            <use
+              xlink:href="@svgSprite#logo-footer"
+              class="footer-logo__link"
+            ></use>
+          </svg>
+          <nav class="footer-menu">
+            <h3 class="footer-menu__title">Меню</h3>
+            <ul class="footer-menu-liks">
+              <li>
+                <a class="footer-menu-liks__item" href="index.html">Главная</a>
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="catalog.html"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a class="footer-menu-liks__item" href="about.html">О нас</a>
+              </li>
+              <li>
+                <a href="reviews.html " class="footer-menu-liks__item"
+                  >Отзывы</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Контакты</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Пользовательское согласие</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Правила оплаты и возврата</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-menu-liks__item"
+                  >Политика конфеданциональности</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <nav class="footer-catalog">
+            <h3 class="footer-menu__title">Каталог</h3>
+            <ul class="footer-catalog-liks">
+              <li>
+                <a href="index.html" class="footer-catalog-liks__item"
+                  >Букеты</a
+                >
+              </li>
+              <li>
+                <a href="catalog.html" class="footer-catalog-liks__item"
+                  >Авторский букет</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="footer-catalog-liks__item"
+                  >Цветы в каробке</a
+                >
+              </li>
+              <li>
+                <a href="reviews.html" class="footer-catalog-liks__item"
+                  >Корзина с цветами</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="footer-catalog-liks__item"
+                  >Съедебные букеты</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-contact">
+            <h3 class="footer-menu__title">Контакты</h3>
+            <div class="footer-contact-inner">
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">ул. Астана Кесаева, 2А</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">info@flower.com</p>
+              </div>
+              <div class="footer-contact-inner__img">
+                <p class="footer-text">+79894267893</p>
+              </div>
+              <div class="footer-social">
+                <a href="">
+                  <svg class="footer-social__svg">
+                    <use
+                      xlink:href="@svgSprite#telegramm-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="@svgSprite#watsapp-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+                <a href=""
+                  ><svg class="footer-social__svg">
+                    <use
+                      xlink:href="@svgSprite#vk-footer"
+                      class="footer-logo__link"
+                    ></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-desc">
+          <p>© 2024. Все права защищены.</p>
+          <p>Разработка сайта</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<div id="login" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Авторизация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          name="tel"
+          class="form__input"
+          placeholder="Номер телефона"
+          id="modal-tel"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Запомнить меня</span></label
+        >
+        <a
+          href="javascript:void(0);"
+          class="form__links"
+          style="font-size: 16px"
+          >Забыли пароль?</a
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>Ещё нет аккаунта?</p>
+        <a href="#" class="register">Зарегистрироваться</a>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Register form -->
+<div id="register" class="modal">
+  <div class="modal-content">
+    <a href="javascript:void(0);" class="modal-content__close"></a>
+    <div class="modal-title">Регистрация</div>
+    <form class="form" action="">
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="ФИО"
+          id="modal-text"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#user"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Номер телефона"
+          name="tel"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#input-tel"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="email"
+          class="form__input"
+          placeholder="Email"
+          name="password"
+          id="modal-email"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#email"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Пароль"
+          name="password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__item">
+        <input
+          type="password"
+          class="form__input"
+          placeholder="Повторить пароль"
+          name="modal-password"
+          id="modal-password"
+          required
+        />
+        <svg class="form__input-svg">
+          <use xlink:href="@svgSprite#inpyt-castle"></use>
+        </svg>
+      </div>
+      <div class="form__text">
+        <label class="custom-checkbox">
+          <input type="checkbox" value="value-1" />
+          <span class="text">Я ознакомлен и принимаю условия</span>
+          <a href="" class="text-link"> Пользовательского соглашения</a></label
+        >
+      </div>
+      <div class="response"></div>
+      <button class="button">Отправить</button>
+      <div class="form__links">
+        <p>У вас есть аккунт?</p>
+        <a href="#" class="login">Авторизуйтесь</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+  let login = document.getElementById("login");
+  let register = document.getElementById("register");
+  let loginCloseButton = login.querySelector(".modal-content__close");
+  let registerCloseButton = register.querySelector(".modal-content__close");
+
+  document.querySelector(".afto").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+  });
+
+  login
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      login.classList.add("close");
+      login.classList.remove("open");
+    });
+
+  document.querySelector(".register").addEventListener("click", function () {
+    event.preventDefault();
+    register.classList.add("open");
+    register.classList.remove("close");
+
+    login.classList.add("close");
+    login.classList.remove("open");
+  });
+
+  document.querySelector(".login").addEventListener("click", function () {
+    event.preventDefault();
+    login.classList.add("open");
+    login.classList.remove("close");
+
+    register.classList.add("close");
+    register.classList.remove("open");
+  });
+
+  register
+    .querySelector(".modal-content__close")
+    .addEventListener("click", function () {
+      register.classList.add("close");
+      register.classList.remove("open");
+    });
+</script>
